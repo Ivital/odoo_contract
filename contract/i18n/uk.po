@@ -6,73 +6,75 @@
 # OCA Transbot <transbot@odoo-community.org>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-21 18:22+0000\n"
-"PO-Revision-Date: 2017-11-21 18:22+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
-"Language-Team: Ukrainian (https://www.transifex.com/oca/teams/23907/uk/)\n"
+"POT-Creation-Date: 2026-09-30 12:22+0000\n"
+"PO-Revision-Date: 2026-09-30 00:00+0000\n"
+"Last-Translator: \n"
 "Language: uk\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Language-Team: Ukrainian\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #. module: contract
-#: model:mail.template,body_html:contract.email_contract_template
+#, python-brace-format, python-format
 msgid ""
 "<div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">"
+"\n"
 "                <p>Hello <t t-out=\"object.partner_id.name or '' \"/>,</p>\n"
 "                <p>A new contract has been created: </p>\n"
 "\n"
-"                <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;"
-"\">\n"
+"                <p style=\"border-left: 1px solid #8e0000; margin-left: "
+"30px;\">\n"
 "                    &amp;nbsp;&amp;nbsp;<strong>REFERENCES</strong><br/>\n"
-"                    &amp;nbsp;&amp;nbsp;Contract: <strong t-"
-"out=\"object.name\"/><br/>\n"
+"                    &amp;nbsp;&amp;nbsp;Contract: <strong "
+"t-out=\"object.name\"/><br/>\n"
 "                    <t t-if=\"object.date_start\">\n"
-"                        &amp;nbsp;&amp;nbsp;Contract Date Start: <t t-"
-"out=\"object.date_start or ''\"/><br/>\n"
+"                        &amp;nbsp;&amp;nbsp;Contract Date Start: <t "
+"t-out=\"object.date_start or ''\"/><br/>\n"
 "                    </t>\n"
 "\n"
 "                    <t t-if=\"object.user_id\">\n"
 "                    <t t-if=\"object.user_id.email\">\n"
 "                            &amp;nbsp;&amp;nbsp;Your Contact: <a t-att-"
-"href=\"'mailto:%s?subject=Contract %s' % (object.user_id.email, object.name)"
-"\" t-out=\"object.user_id.name\"/>\n"
+"href=\"'mailto:%s?subject=Contract %s' % (object.user_id.email, "
+"object.name)\" t-out=\"object.user_id.name\"/>\n"
 "                        </t>\n"
 "                    <t t-else=\"\">\n"
-"                            &amp;nbsp;&amp;nbsp;Your Contact: <t t-"
-"out=\"object.user_id.name\"/>\n"
+"                            &amp;nbsp;&amp;nbsp;Your Contact: <t "
+"t-out=\"object.user_id.name\"/>\n"
 "                        </t>\n"
 "                </t>\n"
 "                </p>\n"
 "\n"
 "                <br/>\n"
-"                <p>If you have any questions, do not hesitate to contact us."
-"</p>\n"
+"                <p>If you have any questions, do not hesitate to contact "
+"us.</p>\n"
 "                <p>Thank you for choosing <t t-out=\"object.company_id.name "
 "or 'us'\"/>!</p>\n"
 "                <br/>\n"
 "                <br/>\n"
 "                <div style=\"width: 375px; margin: 0px; padding: 0px; "
-"background-color: #8E0000; border-top-left-radius: 5px 5px; border-top-right-"
-"radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
+"background-color: #8E0000; border-top-left-radius: 5px 5px; border-top-"
+"right-radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
 "                    <h3 style=\"margin: 0px; padding: 2px 14px; font-size: "
 "12px; color: #DDD;\">\n"
-"                        <strong style=\"text-transform:uppercase;\" t-"
-"out=\"object.company_id.name\"/>\n"
+"                        <strong style=\"text-transform:uppercase;\" "
+"t-out=\"object.company_id.name\"/>\n"
 "                    </h3>\n"
 "                </div>\n"
 "                <div style=\"width: 347px; margin: 0px; padding: 5px 14px; "
 "line-height: 16px; background-color: #F2F2F2;\">\n"
 "                    <span style=\"color: #222; margin-bottom: 5px; display: "
 "block; \">\n"
-"                        <address t-"
-"field=\"object.company_id.sudo().partner_id\" t-"
-"options=\"{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: "
+"                        <address "
+"t-field=\"object.company_id.sudo().partner_id\" "
+"t-options=\"{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: "
 "[&quot;name&quot;, &quot;address&quot;], &quot;no_marker&quot;: True}\"/>\n"
 "                    </span>\n"
 "                    <t t-if=\"object.company_id.phone\">\n"
@@ -84,8 +86,8 @@ msgid ""
 "                    </t>\n"
 "                    <t t-if=\"object.company_id.website\">\n"
 "                        <div>\n"
-"                            Web: <a t-att-href=\"object.company_id.website\" "
-"t-out=\"object.company_id.website\"/>\n"
+"                            Web: <a t-att-href=\"object.company_id.website\""
+" t-out=\"object.company_id.website\"/>\n"
 "                        </div>\n"
 "                    </t>\n"
 "                </div>\n"
@@ -98,18 +100,95 @@ msgid ""
 "            </div>\n"
 "        "
 msgstr ""
+"<div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-"
+"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">"
+"\n"
+"                <p>Вітаємо, <t t-out=\"object.partner_id.name or '' "
+"\"/>!</p>\n"
+"                <p>Створено новий договір: </p>\n"
+"\n"
+"                <p style=\"border-left: 1px solid #8e0000; margin-left: "
+"30px;\">\n"
+"                    &amp;nbsp;&amp;nbsp;<strong>ПОСИЛАННЯ</strong><br/>\n"
+"                    &amp;nbsp;&amp;nbsp;Договір: <strong "
+"t-out=\"object.name\"/><br/>\n"
+"                    <t t-if=\"object.date_start\">\n"
+"                        &amp;nbsp;&amp;nbsp;Дата початку договору: <t "
+"t-out=\"object.date_start or ''\"/><br/>\n"
+"                    </t>\n"
+"\n"
+"                    <t t-if=\"object.user_id\">\n"
+"                    <t t-if=\"object.user_id.email\">\n"
+"                            &amp;nbsp;&amp;nbsp;Ваш контакт: <a t-att-"
+"href=\"'mailto:%s?subject=Contract %s' % (object.user_id.email, "
+"object.name)\" t-out=\"object.user_id.name\"/>\n"
+"                        </t>\n"
+"                    <t t-else=\"\">\n"
+"                            &amp;nbsp;&amp;nbsp;Ваш контакт: <t "
+"t-out=\"object.user_id.name\"/>\n"
+"                        </t>\n"
+"                </t>\n"
+"                </p>\n"
+"\n"
+"                <br/>\n"
+"                <p>Якщо у вас виникли запитання, звертайтеся до нас.</p>\n"
+"                <p>Дякуємо, що обрали <t t-out=\"object.company_id.name or "
+"'us'\"/>!</p>\n"
+"                <br/>\n"
+"                <br/>\n"
+"                <div style=\"width: 375px; margin: 0px; padding: 0px; "
+"background-color: #8E0000; border-top-left-radius: 5px 5px; border-top-"
+"right-radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
+"                    <h3 style=\"margin: 0px; padding: 2px 14px; font-size: "
+"12px; color: #DDD;\">\n"
+"                        <strong style=\"text-transform:uppercase;\" "
+"t-out=\"object.company_id.name\"/>\n"
+"                    </h3>\n"
+"                </div>\n"
+"                <div style=\"width: 347px; margin: 0px; padding: 5px 14px; "
+"line-height: 16px; background-color: #F2F2F2;\">\n"
+"                    <span style=\"color: #222; margin-bottom: 5px; display: "
+"block; \">\n"
+"                        <address "
+"t-field=\"object.company_id.sudo().partner_id\" "
+"t-options=\"{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: "
+"[&quot;name&quot;, &quot;address&quot;], &quot;no_marker&quot;: True}\"/>\n"
+"                    </span>\n"
+"                    <t t-if=\"object.company_id.phone\">\n"
+"                        <div style=\"margin-top: 0px; margin-right: 0px; "
+"margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; "
+"padding-bottom: 0px; padding-left: 0px; \">\n"
+"                            Телефон: <t t-out=\"object.company_id.phone\"/>\n"
+"                        </div>\n"
+"                    </t>\n"
+"                    <t t-if=\"object.company_id.website\">\n"
+"                        <div>\n"
+"                            Вебсайт: <a t-att-"
+"href=\"object.company_id.website\" t-out=\"object.company_id.website\"/>\n"
+"                        </div>\n"
+"                    </t>\n"
+"                </div>\n"
+"                <br/>\n"
+"                <a t-att-href=\"'%s/my/contracts/%s?access_token=%s' % "
+"(object.get_base_url(), object.id, object.access_token)\" target=\"_blank\" "
+"style=\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-"
+"decoration: none; color: #fff; border-radius: 5px; font-"
+"size:13px;\">Переглянути договір</a>\n"
+"            </div>\n"
+"        "
 
 #. module: contract
-#: model:mail.template,body_html:contract.mail_template_contract_modification
 msgid ""
 "<p>Hello</p>\n"
 "            <p>We have modifications on the contract that we want to notify "
 "you.</p>\n"
 "        "
 msgstr ""
+"<p>Вітаємо!</p>\n"
+"            <p>У договорі є зміни, про які ми хочемо вас повідомити.</p>\n"
+"        "
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_manually_create_invoice_form_view
 msgid ""
 "<span invisible=\"contract_to_invoice_count &gt; 1\">\n"
 "                                contract to invoice\n"
@@ -119,14 +198,19 @@ msgid ""
 "                                contracts to invoice\n"
 "                            </span>"
 msgstr ""
+"<span invisible=\"contract_to_invoice_count &gt; 1\">\n"
+"                                договір до виставлення рахунку\n"
+"                            </span>\n"
+"                            <span invisible=\"contract_to_invoice_count "
+"&lt;= 1\">\n"
+"                                договори до виставлення рахунків\n"
+"                            </span>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong class=\"mr16\">Subtotal</strong>"
-msgstr ""
+msgstr "<strong class=\"mr16\">Проміжний підсумок</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid ""
 "<strong>#END#</strong>\n"
 "                                    : End date\n"
@@ -134,14 +218,17 @@ msgid ""
 "                                    the\n"
 "                                    invoiced period"
 msgstr ""
+"<strong>#END#</strong>\n"
+"                                    : дата завершення\n"
+"                                    періоду,\n"
+"                                    за який\n"
+"                                    виставлено рахунок"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "<strong>#END#</strong>: End date of the invoiced period"
-msgstr ""
+msgstr "<strong>#END#</strong>: дата завершення періоду, за який виставлено рахунок"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid ""
 "<strong>#INVOICEMONTHNAME#</strong>\n"
 "                                    : Invoice month name\n"
@@ -149,16 +236,21 @@ msgid ""
 "                                    the\n"
 "                                    invoiced period"
 msgstr ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : назва місяця рахунку\n"
+"                                    за період,\n"
+"                                    за який\n"
+"                                    виставлено рахунок"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid ""
 "<strong>#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced "
 "period"
 msgstr ""
+"<strong>#INVOICEMONTHNAME#</strong>: назва місяця рахунку за період, за який"
+" виставлено рахунок"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid ""
 "<strong>#START#</strong>\n"
 "                                    : Start\n"
@@ -166,1582 +258,1113 @@ msgid ""
 "                                    of the\n"
 "                                    invoiced period"
 msgstr ""
+"<strong>#START#</strong>\n"
+"                                    : дата початку\n"
+"                                    періоду,\n"
+"                                    за який\n"
+"                                    виставлено рахунок"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid ""
 "<strong>#START#</strong>: Start date of the\n"
 "                                        invoiced period"
 msgstr ""
+"<strong>#START#</strong>: дата початку\n"
+"                                        періоду, за який виставлено рахунок"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Contract: </strong>"
-msgstr ""
+msgstr "<strong>Договір: </strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Customer:</strong>"
-msgstr ""
+msgstr "<strong>Клієнт:</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Date Start</strong>"
-msgstr ""
+msgstr "<strong>Дата початку</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Date end</strong>"
-msgstr ""
+msgstr "<strong>Дата завершення</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Date of Next Invoice</strong>"
-msgstr ""
+msgstr "<strong>Дата наступного рахунку</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Description</strong>"
-msgstr ""
+msgstr "<strong>Опис</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Modifications</strong>"
-msgstr ""
+msgstr "<strong>Зміни</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Notes: </strong>"
-msgstr ""
+msgstr "<strong>Примітки: </strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Partner:</strong>"
-msgstr ""
+msgstr "<strong>Контрагент:</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Price</strong>"
-msgstr ""
+msgstr "<strong>Ціна</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Quantity</strong>"
-msgstr ""
+msgstr "<strong>Кількість</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Recurring Items</strong>"
-msgstr ""
+msgstr "<strong>Повторювані позиції</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Reference</strong>"
-msgstr ""
+msgstr "<strong>Посилання</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Responsible: </strong>"
-msgstr ""
+msgstr "<strong>Відповідальний: </strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Responsible:</strong>"
-msgstr ""
+msgstr "<strong>Відповідальний:</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Total</strong>"
-msgstr ""
+msgstr "<strong>Разом</strong>"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Unit Price</strong>"
-msgstr ""
+msgstr "<strong>Ціна за одиницю</strong>"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__access_warning
 msgid "Access warning"
-msgstr ""
+msgstr "Попередження про доступ"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Потрібна дія"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__active
-#: model:ir.model.fields,field_description:contract.field_contract_line__active
 msgid "Active"
-msgstr ""
+msgstr "Активний"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Дії"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Оформлення виняткової дії"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Стан дії"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Іконка типу дії"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Add a line"
-msgstr ""
+msgstr "Додати рядок"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Add a note"
-msgstr ""
+msgstr "Додати примітку"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Add a section"
-msgstr ""
+msgstr "Додати розділ"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__analytic_distribution
 msgid "Analytic Distribution"
-msgstr ""
+msgstr "Аналітичний розподіл"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__analytic_precision
 msgid "Analytic Precision"
-msgstr ""
+msgstr "Точність аналітики"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "April"
-msgstr ""
+msgstr "Квітень"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Archived"
-msgstr ""
+msgstr "Архівовано"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Associated Partner"
-msgstr ""
+msgstr "Пов'язаний контрагент"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Кількість вкладень"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "August"
-msgstr ""
+msgstr "Серпень"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__automatic_price
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__automatic_price
 msgid "Auto-price?"
-msgstr ""
+msgstr "Автоматична ціна?"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_manually_create_invoice_form_view
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__is_canceled
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__is_canceled
 msgid "Canceled"
-msgstr ""
+msgstr "Скасовано"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
+#, python-format
 msgid "Cannot compute total value for contract line '%s': no end date is set."
 msgstr ""
+"Неможливо обчислити загальне значення для рядка договору '%s': дату "
+"завершення не задано."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__product_uom_category_id
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__product_uom_category_id
 msgid "Category"
-msgstr ""
+msgstr "Категорія"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__line_recurrence
-#: model:ir.model.fields,help:contract.field_contract_template__line_recurrence
 msgid ""
 "Check this if you want to control recurrence at the line level instead of "
 "for the whole contract."
 msgstr ""
+"Позначте, якщо потрібно керувати повторенням на рівні рядка, а не всього "
+"договору."
 
 #. module: contract
-#: model_terms:ir.actions.act_window,help:contract.contract_template_action
 msgid "Click to create a new contract template."
-msgstr ""
+msgstr "Натисніть, щоб створити новий шаблон договору."
 
 #. module: contract
-#: model_terms:ir.actions.act_window,help:contract.action_customer_contract
-#: model_terms:ir.actions.act_window,help:contract.action_supplier_contract
 msgid "Click to create a new contract."
-msgstr ""
+msgstr "Натисніть, щоб створити новий договір."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_tag__color
 msgid "Color Index"
-msgstr ""
+msgstr "Індекс кольору"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__commercial_partner_id
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Commercial Entity"
-msgstr ""
+msgstr "Комерційна організація"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Communication"
-msgstr ""
+msgstr "Комунікація"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__company_id
-#: model:ir.model.fields,field_description:contract.field_contract_line__company_id
-#: model:ir.model.fields,field_description:contract.field_contract_tag__company_id
-#: model:ir.model.fields,field_description:contract.field_contract_template__company_id
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__company_id
 msgid "Company"
-msgstr ""
+msgstr "Компанія"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract.py:0
 msgid "Compose Email"
-msgstr ""
+msgstr "Створити лист"
 
 #. module: contract
-#: model:ir.model,name:contract.model_res_partner
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Contact"
-msgstr ""
+msgstr "Контакт"
 
 #. module: contract
-#: model:ir.actions.report,name:contract.report_contract
-#: model:ir.model,name:contract.model_contract_contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__contract_id
-#: model:ir.model.fields,field_description:contract.field_contract_modification__contract_id
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__contract_id
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
-#: model_terms:ir.ui.view,arch_db:contract.res_config_settings_form_view
 msgid "Contract"
-msgstr ""
+msgstr "Договір"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_my_contracts
 msgid "Contract #"
-msgstr ""
+msgstr "№ договору"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Contract -"
-msgstr ""
+msgstr "Договір -"
 
 #. module: contract
-#: model:ir.model,name:contract.model_contract_line
-#: model:ir.model.fields,field_description:contract.field_account_move_line__contract_line_id
 msgid "Contract Line"
-msgstr ""
+msgstr "Рядок договору"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_manually_create_invoice_form_view
 msgid "Contract Manually Create Invoice"
-msgstr ""
+msgstr "Ручне створення рахунку за договором"
 
 #. module: contract
-#: model:ir.model,name:contract.model_contract_manually_create_invoice
 msgid "Contract Manually Create Invoice Wizard"
-msgstr ""
+msgstr "Майстер ручного створення рахунку за договором"
 
 #. module: contract
-#: model:ir.model,name:contract.model_contract_modification
 msgid "Contract Modification"
-msgstr ""
+msgstr "Зміна договору"
 
 #. module: contract
-#: model:mail.template,name:contract.mail_template_contract_modification
 msgid "Contract Modification Template"
-msgstr ""
+msgstr "Шаблон зміни договору"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Contract Name"
-msgstr ""
+msgstr "Назва договору"
 
 #. module: contract
-#: model:ir.model,name:contract.model_contract_recurring_mixin
 msgid "Contract Recurring Mixin"
-msgstr ""
+msgstr "Домішка повторення договору"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_form_view
 msgid "Contract Start & End Dates"
-msgstr ""
+msgstr "Дати початку та завершення договору"
 
 #. module: contract
-#: model:ir.model,name:contract.model_contract_tag
-#: model:ir.ui.menu,name:contract.contract_tag_menu
 msgid "Contract Tag"
-msgstr ""
+msgstr "Мітка договору"
 
 #. module: contract
-#: model:ir.actions.act_window,name:contract.contract_tag_act_window
 msgid "Contract Tags"
-msgstr ""
+msgstr "Мітки договору"
 
 #. module: contract
-#: model:ir.model,name:contract.model_contract_template
-#: model:ir.model.fields,field_description:contract.field_contract_contract__contract_template_id
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Contract Template"
-msgstr ""
+msgstr "Шаблон договору"
 
 #. module: contract
-#: model:ir.model,name:contract.model_contract_template_line
 msgid "Contract Template Line"
-msgstr ""
+msgstr "Рядок шаблону договору"
 
 #. module: contract
-#: model:ir.actions.act_window,name:contract.contract_template_action
-#: model:ir.ui.menu,name:contract.contract_template_menu
 msgid "Contract Templates"
-msgstr ""
+msgstr "Шаблони договорів"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__contract_to_invoice_ids
 msgid "Contract To Invoice"
-msgstr ""
+msgstr "Договір до виставлення рахунку"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__contract_to_invoice_count
 msgid "Contract To Invoice Count"
-msgstr ""
+msgstr "Кількість договорів до виставлення рахунків"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__contract_type
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__contract_type
-#: model:ir.model.fields,field_description:contract.field_contract_template__contract_type
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_search_view
 msgid "Contract Type"
-msgstr ""
+msgstr "Тип договору"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__date_start
-#: model:ir.model.fields,help:contract.field_contract_line__date_start
-#: model:ir.model.fields,help:contract.field_contract_recurring_mixin__date_start
-#: model:ir.model.fields,help:contract.field_contract_template__date_start
-#: model:ir.model.fields,help:contract.field_contract_template_line__date_start
 msgid "Contract activation date (first recurrence starts here)"
-msgstr ""
+msgstr "Дата активації договору (перше повторення починається тут)"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
+#, python-format
 msgid "Contract line '%s' start date can't be later than end date"
-msgstr ""
+msgstr "Дата початку рядка договору '%s' не може бути пізнішою за дату завершення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__contract_line_ids
 msgid "Contract lines"
-msgstr ""
+msgstr "Рядки договору"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__contract_line_fixed_ids
 msgid "Contract lines (fixed)"
-msgstr ""
+msgstr "Рядки договору (фіксовані)"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract.py:0
+#, python-format
 msgid "Contract manually invoiced: %(invoice_link)s"
-msgstr ""
+msgstr "Договір виставлено вручну: %(invoice_link)s"
 
 #. module: contract
-#: model:mail.message.subtype,name:contract.mail_message_subtype_contract_modification
 msgid "Contract modifications"
-msgstr ""
+msgstr "Зміни договору"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract.py:0
 msgid "Contract start"
-msgstr ""
+msgstr "Початок договору"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_template__contract_line_ids
 msgid "Contract template lines"
-msgstr ""
+msgstr "Рядки шаблону договору"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_res_partner__contract_ids
-#: model:ir.model.fields,field_description:contract.field_res_users__contract_ids
-#: model:ir.ui.menu,name:contract.menu_config_contract
-#: model:ir.ui.menu,name:contract.menu_contract_reporting
-#: model_terms:ir.ui.view,arch_db:contract.portal_my_contracts
-#: model_terms:ir.ui.view,arch_db:contract.portal_my_home_contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_my_home_menu_contract
 msgid "Contracts"
-msgstr ""
+msgstr "Договори"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/wizards/contract_manually_create_invoice.py:0
 msgid "Contracts to invoice"
-msgstr ""
+msgstr "Договори до виставлення рахунків"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_line__product_uom_category_id
-#: model:ir.model.fields,help:contract.field_contract_template_line__product_uom_category_id
 msgid ""
 "Conversion between Units of Measure can only occur if they belong to the "
 "same category. The conversion will be made based on the ratios."
 msgstr ""
+"Перетворення між одиницями вимірювання можливе лише в межах однієї "
+"категорії. Перетворення виконується на основі коефіцієнтів."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__create_invoice_visibility
-#: model:ir.model.fields,field_description:contract.field_contract_line__create_invoice_visibility
 msgid "Create Invoice Visibility"
-msgstr ""
+msgstr "Видимість створення рахунку"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_manually_create_invoice_form_view
-#, fuzzy
 msgid "Create Invoices"
-msgstr "Дата останньої зміни"
+msgstr "Створити рахунки"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Create invoices"
-msgstr ""
+msgstr "Створити рахунки"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__create_uid
-#: model:ir.model.fields,field_description:contract.field_contract_line__create_uid
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__create_uid
-#: model:ir.model.fields,field_description:contract.field_contract_modification__create_uid
-#: model:ir.model.fields,field_description:contract.field_contract_tag__create_uid
-#: model:ir.model.fields,field_description:contract.field_contract_template__create_uid
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__create_uid
 msgid "Created by"
 msgstr "Створив"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__create_date
-#: model:ir.model.fields,field_description:contract.field_contract_line__create_date
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__create_date
-#: model:ir.model.fields,field_description:contract.field_contract_modification__create_date
-#: model:ir.model.fields,field_description:contract.field_contract_tag__create_date
-#: model:ir.model.fields,field_description:contract.field_contract_template__create_date
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__create_date
 msgid "Created on"
-msgstr "Створено"
+msgstr "Дата створення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__currency_id
-#: model:ir.model.fields,field_description:contract.field_contract_line__currency_id
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__currency_id
 msgid "Currency"
-msgstr ""
+msgstr "Валюта"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__note_invoicing_mode__custom
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__note_invoicing_mode__custom
 msgid "Custom"
-msgstr ""
+msgstr "Користувацький"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__contract_type__sale
-#: model:ir.model.fields.selection,name:contract.selection__contract_manually_create_invoice__contract_type__sale
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__contract_type__sale
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_customer_form_view
 msgid "Customer"
-msgstr ""
+msgstr "Клієнт"
 
 #. module: contract
-#: model:ir.actions.act_window,name:contract.action_customer_contract_lines
 msgid "Customer Contract Lines"
-msgstr ""
+msgstr "Рядки договору клієнта"
 
 #. module: contract
-#: model:ir.ui.menu,name:contract.menu_customer_contract_line_report
 msgid "Customer Contract lines"
-msgstr ""
+msgstr "Рядки договору клієнта"
 
 #. module: contract
-#: model:ir.actions.act_window,name:contract.action_customer_contract
-#: model:ir.ui.menu,name:contract.menu_contract_contract_customer
 msgid "Customer Contracts"
-msgstr ""
+msgstr "Договори клієнта"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__access_url
 msgid "Customer Portal URL"
-msgstr ""
+msgstr "URL порталу клієнта"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/controllers/main.py:0
-#: model:ir.model.fields,field_description:contract.field_contract_contract__date
-#: model:ir.model.fields,field_description:contract.field_contract_modification__date
-#: model_terms:ir.ui.view,arch_db:contract.portal_my_contracts
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
-#: model_terms:ir.ui.view,arch_db:contract.template_contract_modification
 msgid "Date"
-msgstr ""
+msgstr "Дата"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__date_end
-#: model:ir.model.fields,field_description:contract.field_contract_line__date_end
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__date_end
-#: model:ir.model.fields,field_description:contract.field_contract_template__date_end
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__date_end
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Date End"
-msgstr ""
+msgstr "Дата завершення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__date_start
-#: model:ir.model.fields,field_description:contract.field_contract_line__date_start
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__date_start
-#: model:ir.model.fields,field_description:contract.field_contract_template__date_start
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__date_start
 msgid "Date Start"
-msgstr ""
+msgstr "Дата початку"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
-#: model_terms:ir.ui.view,arch_db:contract.portal_my_contracts
 msgid "Date end"
-msgstr ""
+msgstr "Дата завершення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_next_date
-#: model:ir.model.fields,field_description:contract.field_contract_line__recurring_next_date
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__recurring_next_date
-#: model:ir.model.fields,field_description:contract.field_contract_template__recurring_next_date
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_next_date
 msgid "Date of Next Invoice"
-msgstr ""
+msgstr "Дата наступного рахунку"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Date of next invoice"
-msgstr ""
+msgstr "Дата наступного рахунку"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 msgid "Date start"
-msgstr ""
+msgstr "Дата початку"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__daily
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_rule_type__daily
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_rule_type__daily
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__daily
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__daily
 msgid "Day(s)"
-msgstr ""
+msgstr "День(дні)"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "December"
-msgstr ""
+msgstr "Грудень"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_line__sequence
-#: model:ir.model.fields,help:contract.field_contract_template_line__sequence
 msgid "Defines line ordering in the contract."
-msgstr ""
+msgstr "Визначає порядок рядків у договорі."
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__generation_type
-#: model:ir.model.fields,help:contract.field_contract_template__generation_type
 msgid "Defines what document is automatically generated by the cron."
-msgstr ""
+msgstr "Визначає, який документ автоматично створюється cron-завданням."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__name
-#: model:ir.model.fields,field_description:contract.field_contract_modification__description
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__name
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_line_form_view
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
-#: model_terms:ir.ui.view,arch_db:contract.template_contract_modification
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__discount
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__discount
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Discount (%)"
-msgstr ""
+msgstr "Знижка (%)"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_template_line.py:0
 msgid "Discount should be less or equal to 100"
-msgstr ""
+msgstr "Знижка має бути меншою або дорівнювати 100"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_line__discount
-#: model:ir.model.fields,help:contract.field_contract_template_line__discount
 msgid "Discount to apply on generated invoices. Must be ≤ 100."
-msgstr ""
+msgstr "Знижка для створених рахунків. Має бути ≤ 100."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__display_name
-#: model:ir.model.fields,field_description:contract.field_contract_line__display_name
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__display_name
-#: model:ir.model.fields,field_description:contract.field_contract_modification__display_name
-#: model:ir.model.fields,field_description:contract.field_contract_tag__display_name
-#: model:ir.model.fields,field_description:contract.field_contract_template__display_name
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Назва для відображення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__display_type
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__display_type
 msgid "Display Type"
-msgstr ""
+msgstr "Тип відображення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__distribution_analytic_account_ids
 msgid "Distribution Analytic Account"
-msgstr ""
+msgstr "Аналітичний рахунок розподілу"
 
 #. module: contract
-#: model:mail.template,name:contract.email_contract_template
 msgid "Email Contract Template"
-msgstr ""
+msgstr "Шаблон листа договору"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/wizards/contract_manually_create_invoice.py:0
+#, python-format
 msgid ""
 "Failed to process the contract %(name)s [id: %(id)s]:\n"
 "%(ue)s"
 msgstr ""
+"Не вдалося обробити договір %(name)s [id: %(id)s]:\n"
+"%(ue)s"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "February"
-msgstr ""
+msgstr "Лютий"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Finished"
-msgstr ""
+msgstr "Завершено"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__fiscal_position_id
 msgid "Fiscal Position"
-msgstr ""
+msgstr "Фіскальна позиція"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Підписники"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Підписники (контрагенти)"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Іконка Font Awesome, напр. fa-tasks"
 
 #. module: contract
-#: model:ir.actions.server,name:contract.contract_cron_for_invoice_ir_actions_server
 msgid "Generate Recurring Invoices from Contracts"
-msgstr ""
+msgstr "Створювати періодичні рахунки з договорів"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__generation_type
-#: model:ir.model.fields,field_description:contract.field_contract_template__generation_type
 msgid "Generation Type"
-msgstr ""
+msgstr "Тип створення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__group_id
 msgid "Group"
-msgstr ""
+msgstr "Група"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 msgid "Group By..."
-msgstr ""
+msgstr "Групувати за..."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Має повідомлення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__id
-#: model:ir.model.fields,field_description:contract.field_contract_line__id
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__id
-#: model:ir.model.fields,field_description:contract.field_contract_modification__id
-#: model:ir.model.fields,field_description:contract.field_contract_tag__id
-#: model:ir.model.fields,field_description:contract.field_contract_template__id
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__id
 msgid "ID"
 msgstr "ID"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Іконка"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Іконка для позначення виняткової дії."
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Якщо позначено, нові повідомлення потребують вашої уваги."
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Якщо позначено, деякі повідомлення мають помилку доставки."
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_line__automatic_price
-#: model:ir.model.fields,help:contract.field_contract_template_line__automatic_price
 msgid ""
 "If checked, the price will be taken from the pricelist. Otherwise, it must "
 "be set manually."
 msgstr ""
+"Якщо позначено, ціна братиметься з прайс-листа. Інакше її потрібно задати "
+"вручну."
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 msgid "In progress"
-msgstr ""
+msgstr "У процесі"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__generation_type__invoice
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__generation_type__invoice
 msgid "Invoice"
-msgstr ""
+msgstr "Рахунок"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__invoice_count
 msgid "Invoice Count"
-msgstr ""
+msgstr "Кількість рахунків"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__invoice_date
 msgid "Invoice Date"
-msgstr ""
+msgstr "Дата рахунку"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_interval
-#: model:ir.model.fields,field_description:contract.field_contract_line__recurring_interval
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__recurring_interval
-#: model:ir.model.fields,field_description:contract.field_contract_template__recurring_interval
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_interval
 msgid "Invoice Every"
-msgstr ""
+msgstr "Виставляти рахунок кожні"
 
 #. module: contract
-#: model:mail.message.subtype,name:contract.mail_message_subtype_invoice_created
 msgid "Invoice created"
-msgstr ""
+msgstr "Рахунок створено"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__recurring_interval
-#: model:ir.model.fields,help:contract.field_contract_line__recurring_interval
-#: model:ir.model.fields,help:contract.field_contract_recurring_mixin__recurring_interval
-#: model:ir.model.fields,help:contract.field_contract_template__recurring_interval
-#: model:ir.model.fields,help:contract.field_contract_template_line__recurring_interval
 msgid "Invoice every (Days/Week/Month/Year)"
-msgstr ""
+msgstr "Виставляти рахунок кожні (дні/тижні/місяці/роки)"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/wizards/contract_manually_create_invoice.py:0
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Invoices"
-msgstr ""
+msgstr "Рахунки"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Invoicing"
-msgstr ""
+msgstr "Виставлення рахунків"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__invoice_partner_id
 msgid "Invoicing contact"
-msgstr ""
+msgstr "Контакт для виставлення рахунків"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_invoicing_offset
-#: model:ir.model.fields,field_description:contract.field_contract_line__recurring_invoicing_offset
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__recurring_invoicing_offset
-#: model:ir.model.fields,field_description:contract.field_contract_template__recurring_invoicing_offset
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_invoicing_offset
 msgid "Invoicing offset"
-msgstr ""
+msgstr "Зміщення виставлення рахунку"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_invoicing_type
-#: model:ir.model.fields,field_description:contract.field_contract_line__recurring_invoicing_type
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__recurring_invoicing_type
-#: model:ir.model.fields,field_description:contract.field_contract_template__recurring_invoicing_type
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_invoicing_type
 msgid "Invoicing type"
-msgstr ""
+msgstr "Тип виставлення рахунків"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Є підписником"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "January"
-msgstr ""
+msgstr "Січень"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__journal_id
-#: model:ir.model.fields,field_description:contract.field_contract_template__journal_id
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_search_view
 msgid "Journal"
-msgstr ""
+msgstr "Журнал"
 
 #. module: contract
-#: model:ir.model,name:contract.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Позиція журналу"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "July"
-msgstr ""
+msgstr "Липень"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "June"
-msgstr ""
+msgstr "Червень"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__last_date_invoiced
-#: model:ir.model.fields,field_description:contract.field_contract_line__last_date_invoiced
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__last_date_invoiced
-#: model:ir.model.fields,field_description:contract.field_contract_template__last_date_invoiced
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__last_date_invoiced
-#, fuzzy
 msgid "Last Date Invoiced"
-msgstr "Дата останньої зміни"
+msgstr "Дата останнього виставлення рахунку"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__write_uid
-#: model:ir.model.fields,field_description:contract.field_contract_line__write_uid
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__write_uid
-#: model:ir.model.fields,field_description:contract.field_contract_modification__write_uid
-#: model:ir.model.fields,field_description:contract.field_contract_tag__write_uid
-#: model:ir.model.fields,field_description:contract.field_contract_template__write_uid
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__write_uid
 msgid "Last Updated by"
-msgstr "Востаннє відредаговано"
+msgstr "Востаннє оновив"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__write_date
-#: model:ir.model.fields,field_description:contract.field_contract_line__write_date
-#: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__write_date
-#: model:ir.model.fields,field_description:contract.field_contract_modification__write_date
-#: model:ir.model.fields,field_description:contract.field_contract_tag__write_date
-#: model:ir.model.fields,field_description:contract.field_contract_template__write_date
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__write_date
 msgid "Last Updated on"
-msgstr "Дата останньої зміни"
+msgstr "Останнє оновлення"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Legend (for the markers inside invoice lines description)"
-msgstr ""
+msgstr "Умовні позначення (для маркерів в описі рядків рахунку)"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Lines"
-msgstr ""
+msgstr "Рядки"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__manual_currency_id
 msgid "Manual Currency"
-msgstr ""
+msgstr "Валюта вручну"
 
 #. module: contract
-#: model:ir.actions.act_window,name:contract.purchase_contract_manually_create_invoice_act_window
-#: model:ir.ui.menu,name:contract.purchase_contract_manually_create_invoice_menu
 msgid "Manually Invoice Purchase Contracts"
-msgstr ""
+msgstr "Вручну виставити рахунки за договорами закупівлі"
 
 #. module: contract
-#: model:ir.actions.act_window,name:contract.sale_contract_manually_create_invoice_act_window
-#: model:ir.ui.menu,name:contract.sale_contract_manually_create_invoice_menu
 msgid "Manually Invoice Sale Contracts"
-msgstr ""
+msgstr "Вручну виставити рахунки за договорами продажу"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "March"
-msgstr ""
+msgstr "Березень"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "May"
-msgstr ""
+msgstr "Травень"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Помилка доставки повідомлення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Повідомлення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__modification_ids
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Modifications"
-msgstr ""
+msgstr "Зміни"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__monthly
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_rule_type__monthly
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_rule_type__monthly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__monthly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__monthly
 msgid "Month(s)"
-msgstr ""
+msgstr "Місяць(місяці)"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__monthlylastday
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_rule_type__monthlylastday
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_rule_type__monthlylastday
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__monthlylastday
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__monthlylastday
 msgid "Month(s) last day"
-msgstr ""
+msgstr "Останній день місяця"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__monthly_recurring
 msgid "Monthly Recurring"
-msgstr ""
+msgstr "Щомісячне повторення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Кінцевий термін моєї дії"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/controllers/main.py:0
-#: model:ir.model.fields,field_description:contract.field_contract_contract__name
-#: model:ir.model.fields,field_description:contract.field_contract_tag__name
-#: model:ir.model.fields,field_description:contract.field_contract_template__name
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_tree_view
 msgid "Name"
-msgstr ""
+msgstr "Назва"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Кінцевий термін наступної дії"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Опис наступної дії"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Тип наступної дії"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Next Invoice"
-msgstr ""
+msgstr "Наступний рахунок"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__next_period_date_end
-#: model:ir.model.fields,field_description:contract.field_contract_line__next_period_date_end
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__next_period_date_end
-#: model:ir.model.fields,field_description:contract.field_contract_template__next_period_date_end
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__next_period_date_end
 msgid "Next Period End"
-msgstr ""
+msgstr "Кінець наступного періоду"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__next_period_date_start
-#: model:ir.model.fields,field_description:contract.field_contract_line__next_period_date_start
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__next_period_date_start
-#: model:ir.model.fields,field_description:contract.field_contract_template__next_period_date_start
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__next_period_date_start
 msgid "Next Period Start"
-msgstr ""
+msgstr "Початок наступного періоду"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 msgid "Next invoice date"
-msgstr ""
+msgstr "Дата наступного рахунку"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_form_view
 msgid "Next period to invoice"
-msgstr ""
+msgstr "Наступний період до виставлення рахунку"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__display_type__line_note
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__display_type__line_note
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_line_form_view
 msgid "Note"
-msgstr ""
+msgstr "Примітка"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__note_invoicing_mode
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__note_invoicing_mode
 msgid "Note Invoicing Mode"
-msgstr ""
+msgstr "Режим виставлення рахунку за приміткою"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__note
 msgid "Notes"
-msgstr ""
+msgstr "Примітки"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "November"
-msgstr ""
+msgstr "Листопад"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Кількість дій"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__recurring_invoicing_offset
-#: model:ir.model.fields,help:contract.field_contract_line__recurring_invoicing_offset
-#: model:ir.model.fields,help:contract.field_contract_recurring_mixin__recurring_invoicing_offset
-#: model:ir.model.fields,help:contract.field_contract_template__recurring_invoicing_offset
-#: model:ir.model.fields,help:contract.field_contract_template_line__recurring_invoicing_offset
 msgid ""
 "Number of days to offset the invoice from the period end date (in post-paid "
 "mode) or start date (in pre-paid mode)."
 msgstr ""
+"Кількість днів зміщення рахунку від дати завершення періоду (для післяплати)"
+" або дати початку (для передплати)."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Кількість помилок"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Кількість повідомлень, що потребують дії"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Кількість повідомлень із помилкою доставки"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "October"
-msgstr ""
+msgstr "Жовтень"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__date_end
-#: model:ir.model.fields,help:contract.field_contract_line__date_end
-#: model:ir.model.fields,help:contract.field_contract_recurring_mixin__date_end
-#: model:ir.model.fields,help:contract.field_contract_template__date_end
-#: model:ir.model.fields,help:contract.field_contract_template_line__date_end
 msgid "Optional contract termination date (limits recurrence)"
-msgstr ""
+msgstr "Необов'язкова дата припинення договору (обмежує повторення)"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Other Information"
-msgstr ""
+msgstr "Інша інформація"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__partner_id
-#: model:ir.model.fields,field_description:contract.field_contract_line__partner_id
-#: model:ir.model.fields,field_description:contract.field_contract_template__partner_id
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__partner_id
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 msgid "Partner"
-msgstr ""
+msgstr "Контрагент"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__payment_term_id
 msgid "Payment Terms"
-msgstr ""
+msgstr "Умови оплати"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract.py:0
-msgid ""
-"Please define a %(contract_type)s journal for the company '%(company)s'."
-msgstr ""
+#, python-format
+msgid "Please define a %(contract_type)s journal for the company '%(company)s'."
+msgstr "Визначте журнал типу %(contract_type)s для компанії '%(company)s'."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__access_url
 msgid "Portal Access URL"
-msgstr ""
+msgstr "URL доступу до порталу"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_invoicing_type__post-paid
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_invoicing_type__post-paid
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_invoicing_type__post-paid
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_invoicing_type__post-paid
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_invoicing_type__post-paid
 msgid "Post-paid"
-msgstr ""
+msgstr "Післяплата"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_invoicing_type__pre-paid
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_invoicing_type__pre-paid
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_invoicing_type__pre-paid
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_invoicing_type__pre-paid
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_invoicing_type__pre-paid
 msgid "Pre-paid"
-msgstr ""
+msgstr "Передплата"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Preview"
-msgstr ""
+msgstr "Попередній перегляд"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Price unit"
-msgstr ""
+msgstr "Ціна за одиницю"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__pricelist_id
-#: model:ir.model.fields,field_description:contract.field_contract_template__pricelist_id
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_search_view
 msgid "Pricelist"
-msgstr ""
+msgstr "Прайс-лист"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__product_id
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__product_id
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 msgid "Product"
-msgstr ""
+msgstr "Товар"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_res_partner__purchase_contract_count
-#: model:ir.model.fields,field_description:contract.field_res_users__purchase_contract_count
-#: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Purchase Contracts"
-msgstr ""
+msgstr "Договори закупівлі"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Put some note here..."
-msgstr ""
+msgstr "Додайте примітку тут..."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__quantity
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__quantity
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Quantity"
-msgstr ""
+msgstr "Кількість"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__quarterly
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_rule_type__quarterly
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_rule_type__quarterly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__quarterly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__quarterly
 msgid "Quarter(s)"
-msgstr ""
+msgstr "Квартал(и)"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Оцінки"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_rule_type
-#: model:ir.model.fields,field_description:contract.field_contract_line__recurring_rule_type
-#: model:ir.model.fields,field_description:contract.field_contract_recurring_mixin__recurring_rule_type
-#: model:ir.model.fields,field_description:contract.field_contract_template__recurring_rule_type
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_rule_type
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_line_form_view
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Recurrence"
-msgstr ""
+msgstr "Повторення"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__line_recurrence
-#: model:ir.model.fields,field_description:contract.field_contract_template__line_recurrence
 msgid "Recurrence at line level?"
-msgstr ""
+msgstr "Повторення на рівні рядка?"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Recurring Invoices"
-msgstr ""
+msgstr "Періодичні рахунки"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__is_recurring_note
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__is_recurring_note
 msgid "Recurring Note"
-msgstr ""
+msgstr "Примітка повторення"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Recurring Type"
-msgstr ""
+msgstr "Тип повторення"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/controllers/main.py:0
-#: model:ir.model.fields,field_description:contract.field_contract_contract__code
-#: model_terms:ir.ui.view,arch_db:contract.portal_my_contracts
 msgid "Reference"
-msgstr ""
+msgstr "Посилання"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__user_id
 msgid "Responsible"
-msgstr ""
+msgstr "Відповідальний"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Відповідальний користувач"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_res_partner__sale_contract_count
-#: model:ir.model.fields,field_description:contract.field_res_users__sale_contract_count
-#: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Sale Contracts"
-msgstr ""
+msgstr "Договори продажу"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__display_type__line_section
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__display_type__line_section
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_line_form_view
 msgid "Section"
-msgstr ""
+msgstr "Розділ"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__access_token
 msgid "Security Token"
-msgstr ""
+msgstr "Токен безпеки"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__semesterly
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_rule_type__semesterly
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_rule_type__semesterly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__semesterly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__semesterly
 msgid "Semester(s)"
-msgstr ""
+msgstr "Півріччя"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Send by Email"
-msgstr ""
+msgstr "Надіслати ел. поштою"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_modification__sent
 msgid "Sent"
-msgstr ""
+msgstr "Надіслано"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
 msgid "September"
-msgstr ""
+msgstr "Вересень"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__sequence
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Послідовність"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Show the purchase contracts for this partner"
-msgstr ""
+msgstr "Показувати договори закупівлі для цього контрагента"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Show the sale contracts for this partner"
-msgstr ""
+msgstr "Показувати договори продажу для цього контрагента"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__specific_price
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__specific_price
 msgid "Specific Price"
-msgstr ""
+msgstr "Спеціальна ціна"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__recurring_invoicing_type
-#: model:ir.model.fields,help:contract.field_contract_line__recurring_invoicing_type
-#: model:ir.model.fields,help:contract.field_contract_recurring_mixin__recurring_invoicing_type
-#: model:ir.model.fields,help:contract.field_contract_template__recurring_invoicing_type
-#: model:ir.model.fields,help:contract.field_contract_template_line__recurring_invoicing_type
 msgid ""
 "Specify if the invoice must be generated at the beginning (pre-paid) or end "
 "(post-paid) of the period."
 msgstr ""
+"Укажіть, коли створювати рахунок: на початку (передплата) чи наприкінці "
+"(післяплата) періоду."
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__recurring_rule_type
-#: model:ir.model.fields,help:contract.field_contract_line__recurring_rule_type
-#: model:ir.model.fields,help:contract.field_contract_recurring_mixin__recurring_rule_type
-#: model:ir.model.fields,help:contract.field_contract_template__recurring_rule_type
-#: model:ir.model.fields,help:contract.field_contract_template_line__recurring_rule_type
 msgid "Specify interval for automatic invoice generation."
-msgstr ""
+msgstr "Укажіть інтервал для автоматичного створення рахунків."
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__activity_state
 msgid ""
 "Status based on activities\n"
 "Overdue: Due date is already passed\n"
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Стан на основі дій\n"
+"Прострочено: термін уже минув\n"
+"Сьогодні: дата дії — сьогодні\n"
+"Заплановано: майбутні дії."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__price_subtotal
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__price_subtotal
-#: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Sub Total"
-msgstr ""
+msgstr "Проміжний підсумок"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__contract_type__purchase
-#: model:ir.model.fields.selection,name:contract.selection__contract_manually_create_invoice__contract_type__purchase
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__contract_type__purchase
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_supplier_form_view
 msgid "Supplier"
-msgstr ""
+msgstr "Постачальник"
 
 #. module: contract
-#: model:ir.actions.act_window,name:contract.action_supplier_contract_lines
 msgid "Supplier Contract Lines"
-msgstr ""
+msgstr "Рядки договору постачальника"
 
 #. module: contract
-#: model:ir.ui.menu,name:contract.menu_supplier_contract_line_report
 msgid "Supplier Contract lines"
-msgstr ""
+msgstr "Рядки договору постачальника"
 
 #. module: contract
-#: model:ir.actions.act_window,name:contract.action_supplier_contract
-#: model:ir.ui.menu,name:contract.menu_contract_contract_supplier
 msgid "Supplier Contracts"
-msgstr ""
+msgstr "Договори постачальника"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__tag_ids
 msgid "Tags"
-msgstr ""
+msgstr "Мітки"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_line__display_type
-#: model:ir.model.fields,help:contract.field_contract_template_line__display_type
 msgid "Technical field for UX purposes."
-msgstr ""
+msgstr "Технічне поле для потреб UX."
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__date
 msgid ""
-"This is the date the contract is taken into account         (e.g.: signature "
-"date)"
-msgstr ""
+"This is the date the contract is taken into account         (e.g.: signature"
+" date)"
+msgstr "Це дата, з якої договір береться до обліку         (напр., дата підписання)"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_report_tree_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_line_tree_view
 msgid "Total Monthly Recurring"
-msgstr ""
+msgstr "Загальна щомісячна сума повторення"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Тип виняткової дії для запису."
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__price_unit
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__price_unit
 msgid "Unit Price"
-msgstr ""
+msgstr "Ціна за одиницю"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_line__uom_id
-#: model:ir.model.fields,field_description:contract.field_contract_template_line__uom_id
 msgid "Unit of Measure"
-msgstr ""
+msgstr "Одиниця вимірювання"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "VAT:"
-msgstr ""
+msgstr "ПДВ:"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Повідомлення вебсайту"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_contract__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Історія комунікації через вебсайт"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__weekly
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_rule_type__weekly
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_rule_type__weekly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__weekly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__weekly
 msgid "Week(s)"
-msgstr ""
+msgstr "Тиждень(тижні)"
 
 #. module: contract
-#: model:ir.model.fields,help:contract.field_contract_line__note_invoicing_mode
-#: model:ir.model.fields,help:contract.field_contract_template_line__note_invoicing_mode
 msgid "When to invoice this note line relative to others."
-msgstr ""
+msgstr "Коли виставляти рахунок за цим рядком примітки відносно інших."
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__note_invoicing_mode__with_next_line
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__note_invoicing_mode__with_next_line
 msgid "With next line"
-msgstr ""
+msgstr "З наступним рядком"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__note_invoicing_mode__with_previous_line
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__note_invoicing_mode__with_previous_line
 msgid "With previous line"
-msgstr ""
+msgstr "З попереднім рядком"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.view_res_partner_filter
 msgid "With running contracts"
-msgstr ""
+msgstr "З активними договорами"
 
 #. module: contract
-#: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__yearly
-#: model:ir.model.fields.selection,name:contract.selection__contract_line__recurring_rule_type__yearly
-#: model:ir.model.fields.selection,name:contract.selection__contract_recurring_mixin__recurring_rule_type__yearly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__yearly
-#: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__yearly
 msgid "Year(s)"
-msgstr ""
+msgstr "Рік(роки)"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
+#, python-format
 msgid ""
 "You can't have a date of next invoice anterior to the start of the contract "
 "line '%s'"
 msgstr ""
+"Дата наступного рахунку не може бути ранішою за дату початку рядка договору "
+"'%s'"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
+#, python-format
 msgid ""
-"You can't have the end date before the date of last invoice for the contract "
-"line '%s'"
+"You can't have the end date before the date of last invoice for the contract"
+" line '%s'"
 msgstr ""
+"Дата завершення не може бути ранішою за дату останнього рахунку для рядка "
+"договору '%s'"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
+#, python-format
 msgid ""
-"You can't have the next invoice date before the date of last invoice for the "
-"contract line '%s'"
+"You can't have the next invoice date before the date of last invoice for the"
+" contract line '%s'"
 msgstr ""
+"Дата наступного рахунку не може бути ранішою за дату останнього рахунку для "
+"рядка договору '%s'"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
+#, python-format
 msgid ""
 "You can't have the start date after the date of last invoice for the "
 "contract line '%s'"
 msgstr ""
+"Дата початку не може бути пізнішою за дату останнього рахунку для рядка "
+"договору '%s'"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract_line.py:0
+#, python-format
 msgid "You must supply a date of next invoice for contract line '%s'"
-msgstr ""
+msgstr "Потрібно вказати дату наступного рахунку для рядка договору '%s'"
 
 #. module: contract
 #. odoo-python
-#: code:addons/contract/models/contract.py:0
 msgid "by contract"
-msgstr ""
+msgstr "за договором"
 
 #. module: contract
-#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
-#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "e.g. Contract XYZ"
-msgstr ""
+msgstr "напр. Договір XYZ"
 
 #. module: contract
-#: model:mail.template,subject:contract.email_contract_template
 msgid "{{ object.company_id.name }} Contract (Ref {{ object.name or 'n/a' }})"
-msgstr ""
+msgstr "Договір {{ object.company_id.name }} (посилання {{ object.name or 'n/a' }})"
 
 #. module: contract
-#: model:mail.template,subject:contract.mail_template_contract_modification
 msgid ""
 "{{ object.company_id.name }} Contract (Ref {{ object.name or 'n/a' }}) - "
 "Modifications"
 msgstr ""
+"Договір {{ object.company_id.name }} (посилання {{ object.name or 'n/a' }}) "
+"— зміни"
