@@ -22,3 +22,21 @@ msgstr "Замовлення продажу, що очікують рахунк�
 #: model:ir.model.fields,field_description:contract_sale_invoicing.field_contract_contract__invoicing_sales_into_contract
 msgid "Invoicing Sales Into Contract"
 msgstr "Виставлення рахунків продажів у договір"
+
+#. module: contract_sale_invoicing
+#: model:ir.model.fields,help:contract_sale_invoicing.field_contract_contract__invoicing_sales
+msgid ""
+"If checked include sales with same analytic account to invoice in contract "
+"invoice creation."
+msgstr ""
+"Якщо позначено, включати продажі з тим самим аналітичним рахунком до рахунка"
+" під час створення рахунка за договором."
+
+#. module: contract_sale_invoicing
+#: model:ir.model.fields,help:contract_sale_invoicing.field_contract_contract__invoicing_sales_into_contract
+msgid ""
+"If checked, include the sales order lines in the contract invoice instead of"
+" creating separate invoices."
+msgstr ""
+"Якщо позначено, включати рядки замовлення на продаж до рахунка за договором "
+"замість створення окремих рахунків."

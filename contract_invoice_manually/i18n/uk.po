@@ -64,3 +64,19 @@ msgstr ""
 #: model:ir.model.fields,help:contract_invoice_manually.field_res_config_settings__enable_contract_invoice_manually
 msgid "Exclude contracts from being invoiced automatically"
 msgstr "Виключити договори з автоматичного виставлення рахунків"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_contract_manually_create_invoice__filter_domain
+msgid "Filter/Domain to apply on contracts to invoice"
+msgstr "Фільтр/домен для договорів, за якими потрібно виставити рахунок"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_contract_contract__is_manually_invoiced
+msgid ""
+"The contract will be excluded from the automated invoice creation. It can be"
+" invoiced manually via Accounting > Customers/Vendors > Manually Invoice "
+"Sale/Purchase Contracts"
+msgstr ""
+"Договір буде виключено з автоматичного створення рахунків. Його можна "
+"виставити вручну через Бухгалтерський облік > Клієнти/Постачальники > Вручну"
+" виставити рахунок за договорами продажу/закупівлі."

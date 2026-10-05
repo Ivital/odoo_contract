@@ -18,3 +18,15 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract_refund_on_stop.field_res_config_settings__enable_contract_line_refund_on_stop
 msgid "Enable Contract Line Refund On Stop"
 msgstr "Увімкнути повернення рядка договору під час зупинки"
+
+#. module: contract_refund_on_stop
+#: model:ir.model.fields,help:contract_refund_on_stop.field_res_company__enable_contract_line_refund_on_stop
+#: model:ir.model.fields,help:contract_refund_on_stop.field_res_config_settings__enable_contract_line_refund_on_stop
+msgid ""
+"If enabled, users can stop a contract line even after it has been invoiced. "
+"A refund will automatically be created for the invoiced period beyond the "
+"stop date."
+msgstr ""
+"Якщо ввімкнено, користувачі можуть зупинити рядок договору навіть після "
+"виставлення рахунка. Для оплаченого періоду після дати зупинки автоматично "
+"буде створено повернення."

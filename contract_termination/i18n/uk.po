@@ -142,3 +142,22 @@ msgstr "Цей договір припинено з причини"
 #: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_form_view
 msgid "Update Termination Details"
 msgstr "Оновити деталі припинення"
+
+#. module: contract_termination
+#: model:res.groups,name:contract_termination.can_terminate_contract
+msgid "Contract: Can Terminate Contracts"
+msgstr "Договір: можна припиняти договори"
+
+#. module: contract_termination
+#: model:ir.model,name:contract_termination.model_contract_contract_terminate
+msgid "Terminate Contract Wizard"
+msgstr "Майстер припинення договору"
+
+#. module: contract_termination
+#: model:ir.model.fields,help:contract_termination.field_contract_contract_terminate__terminate_with_last_date_invoiced
+msgid ""
+"Terminate the contract lines with the last invoiced date if they cannot be "
+"terminated with the date reported in the wizard."
+msgstr ""
+"Завершувати рядки договору останньою датою виставлення рахунка, якщо їх "
+"неможливо завершити датою, указаною в майстрі."

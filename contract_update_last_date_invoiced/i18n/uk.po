@@ -66,3 +66,13 @@ msgstr "Дата наступного рахунку"
 #: model:ir.model.fields,field_description:contract_update_last_date_invoiced.field_contract_update_last_date_invoiced__last_date_invoiced
 msgid "Last Date Invoiced"
 msgstr "Дата останнього виставлення рахунку"
+
+#. module: contract_update_last_date_invoiced
+#: model:res.groups,name:contract_update_last_date_invoiced.group_contract_line_update_last_date_invoiced
+msgid "Contract: Can update last date invoiced"
+msgstr "Договір: можна оновлювати останню дату виставлення рахунка"
+
+#. module: contract_update_last_date_invoiced
+#: model:ir.model,name:contract_update_last_date_invoiced.model_contract_update_last_date_invoiced
+msgid "Update Contract Last Date Invoiced Wizard"
+msgstr "Майстер оновлення останньої дати рахунка договору"

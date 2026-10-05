@@ -643,3 +643,60 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
 msgid "Termination Notice"
 msgstr "Повідомлення про припинення"
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_product__recurrence_interval
+#: model:ir.model.fields,help:product_contract.field_product_template__recurrence_interval
+msgid ""
+"Define the length of each recurrence period (e.g., every 1 month, every 3 "
+"months)."
+msgstr ""
+"Визначте тривалість кожного періоду повторення (наприклад, кожен 1 місяць, "
+"кожні 3 місяці)."
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_product__recurring_invoicing_type
+#: model:ir.model.fields,help:product_contract.field_product_template__recurring_invoicing_type
+msgid ""
+"Define whether invoices are issued before (prepaid) or after (postpaid) the "
+"service period."
+msgstr ""
+"Визначає, чи рахунки виставляються до (передплата) чи після (післяплата) "
+"періоду надання послуги."
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_product__recurring_interval
+#: model:ir.model.fields,help:product_contract.field_product_template__recurring_interval
+msgid ""
+"Frequency at which invoices are generated (e.g., every 1 month, every 2 "
+"weeks)."
+msgstr ""
+"Періодичність створення рахунків (наприклад, кожен 1 місяць, кожні 2 тижні)."
+
+#. module: product_contract
+#: model:ir.model,name:product_contract.model_product_contract_configurator
+msgid "Product Contract Configurator Wizard"
+msgstr "Майстер конфігуратора договору товару"
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_product__recurring_rule_type
+#: model:ir.model.fields,help:product_contract.field_product_template__recurring_rule_type
+msgid ""
+"Specify the time unit for generating recurring invoices (days, weeks, "
+"months, etc.)."
+msgstr ""
+"Укажіть одиницю часу для створення періодичних рахунків (дні, тижні, місяці "
+"тощо)."
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_product__recurrence_number
+#: model:ir.model.fields,help:product_contract.field_product_template__recurrence_number
+msgid "Total number of recurrence periods for the contract."
+msgstr "Загальна кількість періодів повторення для договору."
+
+#. module: product_contract
+#. odoo-python
+#: code:addons/product_contract/models/product_template.py:0
+#: code:addons/product_contract/models/sale_order_line_contract_mixin.py:0
+msgid "Value of %r should be strictly positive"
+msgstr "Значення %r має бути строго додатним"

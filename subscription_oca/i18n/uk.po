@@ -860,3 +860,23 @@ msgstr "Історія комунікації через вебсайт"
 #: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_template_form
 msgid "e.g. Monthly Subscription"
 msgstr "наприклад, щомісячна підписка"
+
+#. module: subscription_oca
+#: model:ir.model,name:subscription_oca.model_sale_subscription_close_reason
+msgid "Close reason model"
+msgstr "Модель причини закриття"
+
+#. module: subscription_oca
+#: model:ir.model,name:subscription_oca.model_close_reason_wizard
+msgid "Close reason wizard"
+msgstr "Майстер причини закриття"
+
+#. module: subscription_oca
+#: model:ir.model,name:subscription_oca.model_sale_subscription_line
+msgid "Subscription lines added to a given subscription"
+msgstr "Рядки підписки, додані до заданої підписки"
+
+#. module: subscription_oca
+#: model:ir.model,name:subscription_oca.model_sale_subscription_tag
+msgid "Tags for sale subscription"
+msgstr "Теги для підписки на продаж"
