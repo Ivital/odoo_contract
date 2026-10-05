@@ -30,3 +30,9 @@ msgstr ""
 "Якщо ввімкнено, користувачі можуть зупинити рядок договору навіть після "
 "виставлення рахунка. Для оплаченого періоду після дати зупинки автоматично "
 "буде створено повернення."
+
+#. module: contract_refund_on_stop
+#. odoo-python
+#: code:addons/contract_refund_on_stop/models/contract_line.py:0
+msgid "Refund for period %(to_refund_start_date)s %(to_refund_end_date)s"
+msgstr "Повернення за період %(to_refund_start_date)s %(to_refund_end_date)s"

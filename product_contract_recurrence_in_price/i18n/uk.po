@@ -48,3 +48,9 @@ msgid ""
 msgstr ""
 "Суми рядка замовлення на продаж буде помножено на кількість разів, коли для "
 "рядка буде виставлено рахунок."
+
+#. module: product_contract_recurrence_in_price
+#. odoo-python
+#: code:addons/product_contract_recurrence_in_price/models/sale_order_line_contract_mixin.py:0
+msgid "Invalid recurring_rule_type."
+msgstr "Недійсний recurring_rule_type."

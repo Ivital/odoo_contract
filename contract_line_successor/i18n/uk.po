@@ -360,3 +360,100 @@ msgid ""
 msgstr ""
 "Цей прапорець розрізняє остаточне припинення та тимчасове, для якого "
 "користувач не може заздалегідь запланувати наступника"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "A canceled contract line can't be set to auto-renew"
+msgstr "Скасований рядок контракту не можна встановити на автопоновлення"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "A contract line with a successor can't be set to auto-renew"
+msgstr "Рядок контракту з наступником не можна встановити на автопоновлення"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "A contract line with a successor must have a end date"
+msgstr "Рядок контракту з наступником повинен мати дату завершення"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "An auto-renew line must have a end date"
+msgstr "Рядок автопоновлення повинен мати дату завершення"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Auto renew interval should be different then 0"
+msgstr "Інтервал автопоновлення має відрізнятися від 0"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Cancel not allowed for this line"
+msgstr "Скасування не дозволене для цього рядка"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Contract line Un-canceled: %s"
+msgstr "Скасування рядка договору скасовано: %s"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Contract line and its predecessor overlapped"
+msgstr "Рядок контракту перекривається зі своїм попередником"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Contract line and its successor overlapped"
+msgstr "Рядок контракту перекривається зі своїм наступником"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Contract line canceled: %s"
+msgstr "Рядок договору скасовано: %s"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Contract line must be canceled before delete"
+msgstr "Рядок контракту потрібно скасувати перед видаленням"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Plan successor not allowed for this line"
+msgstr "Наступний план не дозволений для цього рядка"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Stop not allowed for this line"
+msgstr "Зупинка не дозволена для цього рядка"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Stop/Plan successor not allowed for this line"
+msgstr "Зупинка/планування наступника не дозволені для цього рядка"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "Un-cancel not allowed for this line"
+msgstr "Відновлення після скасування не дозволене для цього рядка"
+
+#. module: contract_line_successor
+#. odoo-python
+#: code:addons/contract_line_successor/models/contract_line.py:0
+msgid "You can't delay a contract line invoiced at least one time."
+msgstr ""
+"Не можна відкласти рядок контракту, за яким хоча б раз виставлено рахунок."

@@ -700,3 +700,40 @@ msgstr "Загальна кількість періодів повторенн�
 #: code:addons/product_contract/models/sale_order_line_contract_mixin.py:0
 msgid "Value of %r should be strictly positive"
 msgstr "Значення %r має бути строго додатним"
+
+#. module: product_contract
+#. odoo-javascript
+#: code:addons/product_contract/static/src/xml/sale_product_field.xml:0
+msgid "Configure contract"
+msgstr "Налаштувати договір"
+
+#. module: product_contract
+#. odoo-python
+#: code:addons/product_contract/models/sale_order_line.py:0
+msgid "Contract product has different contract template"
+msgstr "Товар контракту має інший шаблон контракту"
+
+#. module: product_contract
+#. odoo-python
+#: code:addons/product_contract/models/product_template.py:0
+msgid "Contract product should be service type"
+msgstr "Товар контракту має бути типу «Послуга»"
+
+#. module: product_contract
+#. odoo-python
+#: code:addons/product_contract/models/sale_order_line.py:0
+msgid "Sale Order and contract should be linked to the same partner"
+msgstr "Замовлення продажу й контракт мають бути пов’язані з одним партнером"
+
+#. module: product_contract
+#. odoo-python
+#: code:addons/product_contract/models/product_template.py:0
+msgid "Value of %r should be positive"
+msgstr "Значення %r має бути додатним"
+
+#. module: product_contract
+#. odoo-python
+#: code:addons/product_contract/models/sale_order.py:0
+#: code:addons/product_contract/models/sale_order_line.py:0
+msgid "You can't upsell or downsell a terminated contract"
+msgstr "Не можна збільшувати чи зменшувати продаж за завершеним договором"

@@ -880,3 +880,21 @@ msgstr "Рядки підписки, додані до заданої підпи
 #: model:ir.model,name:subscription_oca.model_sale_subscription_tag
 msgid "Tags for sale subscription"
 msgstr "Теги для підписки на продаж"
+
+#. module: subscription_oca
+#. odoo-python
+#: code:addons/subscription_oca/models/sale_subscription.py:0
+msgid "Created invoice with reference"
+msgstr "Створено рахунок із посиланням"
+
+#. module: subscription_oca
+#. odoo-python
+#: code:addons/subscription_oca/models/sale_subscription_stage.py:0
+msgid "There is already a Closed-type stage declared"
+msgstr "Етап типу «Закрито» вже оголошено"
+
+#. module: subscription_oca
+#. odoo-python
+#: code:addons/subscription_oca/models/sale_subscription.py:0
+msgid "To validate"
+msgstr "До перевірки"

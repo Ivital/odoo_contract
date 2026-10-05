@@ -161,3 +161,9 @@ msgid ""
 msgstr ""
 "Завершувати рядки договору останньою датою виставлення рахунка, якщо їх "
 "неможливо завершити датою, указаною в майстрі."
+
+#. module: contract_termination
+#. odoo-python
+#: code:addons/contract_termination/models/contract_contract.py:0
+msgid "You are not allowed to terminate contracts."
+msgstr "Вам не дозволено припиняти контракти."
