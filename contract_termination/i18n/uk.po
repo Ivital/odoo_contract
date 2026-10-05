@@ -53,3 +53,57 @@ msgstr "Назва"
 #: model:ir.model.fields,field_description:contract_termination.field_contract_contract__is_terminated
 msgid "Terminated"
 msgstr "Припинено"
+
+#. module: contract_termination
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_terminate_form_view
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: contract_termination
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract_terminate__write_uid
+#: model:ir.model.fields,field_description:contract_termination.field_contract_terminate_reason__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: contract_termination
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract_terminate__write_date
+#: model:ir.model.fields,field_description:contract_termination.field_contract_terminate_reason__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: contract_termination
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract_terminate__terminate_comment_required
+#: model:ir.model.fields,field_description:contract_termination.field_contract_terminate_reason__terminate_comment_required
+msgid "Require a termination comment"
+msgstr "Вимагати коментар припинення"
+
+#. module: contract_termination
+#. odoo-python
+#: code:addons/contract_termination/models/contract_contract.py:0
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_form_view
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_terminate_form_view
+msgid "Terminate Contract"
+msgstr "Припинити договір"
+
+#. module: contract_termination
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract__terminate_comment
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract_terminate__terminate_comment
+msgid "Termination Comment"
+msgstr "Коментар припинення"
+
+#. module: contract_termination
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract__terminate_date
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract_terminate__terminate_date
+msgid "Termination Date"
+msgstr "Дата припинення"
+
+#. module: contract_termination
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract__terminate_reason_id
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract_terminate__terminate_reason_id
+msgid "Termination Reason"
+msgstr "Причина припинення"
+
+#. module: contract_termination
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_form_view
+msgid "on"
+msgstr "на"

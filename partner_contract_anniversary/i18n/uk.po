@@ -22,3 +22,25 @@ msgstr "Договори"
 #: model_terms:ir.ui.view,arch_db:partner_contract_anniversary.res_partner_form_view
 msgid "Date"
 msgstr "Дата"
+
+#. module: partner_contract_anniversary
+#: model_terms:ir.ui.view,arch_db:partner_contract_anniversary.res_partner_form_view
+msgid "Anniversary Date"
+msgstr "Дата річниці"
+
+#. module: partner_contract_anniversary
+#: model:ir.model.fields,field_description:partner_contract_anniversary.field_res_partner__contract_anniversary_date
+#: model:ir.model.fields,field_description:partner_contract_anniversary.field_res_users__contract_anniversary_date
+msgid "Contract Anniversary Date"
+msgstr "Річниця договору"
+
+#. module: partner_contract_anniversary
+#: model_terms:ir.ui.view,arch_db:partner_contract_anniversary.res_partner_form_view
+msgid "First Contract"
+msgstr "Перший договір"
+
+#. module: partner_contract_anniversary
+#: model:ir.model.fields,field_description:partner_contract_anniversary.field_res_partner__first_contract_line_start_date
+#: model:ir.model.fields,field_description:partner_contract_anniversary.field_res_users__first_contract_line_start_date
+msgid "First Contract Date"
+msgstr "Дата першого договору"

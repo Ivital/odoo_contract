@@ -389,3 +389,302 @@ msgstr "Тип"
 #: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_line__price_unit
 msgid "Unit price"
 msgstr "Ціна за одиницю"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__message_needaction
+msgid "Action Needed"
+msgstr "Потрібна дія"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Оформлення винятку дії"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__activity_state
+msgid "Activity State"
+msgstr "Стан дії"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Піктограма типу дії"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_line__analytic_distribution
+msgid "Analytic Distribution"
+msgstr "Аналітичний розподіл"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_line__analytic_precision
+msgid "Analytic Precision"
+msgstr "Точність аналітики"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__message_attachment_count
+msgid "Attachment Count"
+msgstr "Кількість вкладень"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.close_reason_wizard_view
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: subscription_oca
+#: model:ir.actions.act_window,name:subscription_oca.close_reason_wizard_act_window
+#: model_terms:ir.ui.view,arch_db:subscription_oca.close_reason_wizard_view
+msgid "Close reason"
+msgstr "Причина закриття"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__user_id
+#: model_terms:ir.ui.view,arch_db:subscription_oca.view_sale_order_pending_filter
+msgid "Commercial agent"
+msgstr "Комерційний агент"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.close_reason_wizard_view
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_form
+msgid "Create Invoice"
+msgstr "Створити рахунок"
+
+#. module: subscription_oca
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_template__recurring_rule_type__days
+msgid "Day(s)"
+msgstr "День(дні)"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_line__distribution_analytic_account_ids
+msgid "Distribution Analytic Account"
+msgstr "Аналітичний рахунок розподілу"
+
+#. module: subscription_oca
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_stage__type__draft
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_template__invoicing_mode__draft
+#: model:sale.subscription.stage,name:subscription_oca.subscription_stage_draft
+msgid "Draft"
+msgstr "Чернетка"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_kanban
+msgid "Edit"
+msgstr "Редагувати"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__fiscal_position_id
+msgid "Fiscal Position"
+msgstr "Фіскальна позиція"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Підписники (контрагенти)"
+
+#. module: subscription_oca
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_template__recurring_rule_boundary__unlimited
+msgid "Forever"
+msgstr "Назавжди"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.view_sale_order_pending_filter
+msgid "Group By"
+msgstr "Групувати за"
+
+#. module: subscription_oca
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_template__invoicing_mode__invoice_send
+msgid "Invoice & send"
+msgstr "Виставити рахунок і надіслати"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__account_invoice_ids_count
+msgid "Invoice Count"
+msgstr "Кількість рахунків"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_template__invoice_mail_template_id
+msgid "Invoice Email"
+msgstr "Email рахунка"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_template__invoicing_mode
+msgid "Invoicing mode"
+msgstr "Режим виставлення рахунків"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_stage__fold
+msgid "Kanban folded"
+msgstr "Згорнуто в Kanban"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_close_reason_wizard__write_uid
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__write_uid
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_close_reason__write_uid
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_line__write_uid
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_stage__write_uid
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_tag__write_uid
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_template__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_close_reason_wizard__write_date
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__write_date
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_close_reason__write_date
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_line__write_date
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_stage__write_date
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_tag__write_date
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_template__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__message_has_error
+msgid "Message Delivery error"
+msgstr "Помилка доставки повідомлення"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_form
+msgid "Misc"
+msgstr "Інше"
+
+#. module: subscription_oca
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_template__recurring_rule_type__months
+msgid "Month(s)"
+msgstr "Місяць(і)"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Кінцевий термін моєї дії"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_form
+msgid "New subscription"
+msgstr "Нова підписка"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Кінцевий термін наступної дії"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__activity_summary
+msgid "Next Activity Summary"
+msgstr "Підсумок наступної дії"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__activity_type_id
+msgid "Next Activity Type"
+msgstr "Тип наступної дії"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__recurring_next_date
+#: model_terms:ir.ui.view,arch_db:subscription_oca.view_sale_order_pending_filter
+msgid "Next invoice date"
+msgstr "Дата наступного рахунку"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Кількість дій"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__message_has_error_counter
+msgid "Number of errors"
+msgstr "Кількість помилок"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_form
+msgid "Other info"
+msgstr "Інша інформація"
+
+#. module: subscription_oca
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_stage__type__pre
+#: model:sale.subscription.stage,name:subscription_oca.subscription_stage_ready
+msgid "Ready to start"
+msgstr "Готово до початку"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__recurring_total
+msgid "Recurring price"
+msgstr "Періодична ціна"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__activity_user_id
+msgid "Responsible User"
+msgstr "Відповідальний користувач"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_product_product__subscribable
+#: model:ir.model.fields,field_description:subscription_oca.field_product_template__subscribable
+msgid "Subscribable product"
+msgstr "Товар із можливістю підписки"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_res_partner__subscription_count
+#: model:ir.model.fields,field_description:subscription_oca.field_res_users__subscription_count
+msgid "Subscription Count"
+msgstr "Кількість підписок"
+
+#. module: subscription_oca
+#: model:ir.model,name:subscription_oca.model_sale_subscription_stage
+#: model_terms:ir.ui.view,arch_db:subscription_oca.view_subscription_stage_form
+msgid "Subscription stage"
+msgstr "Етап підписки"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_product_product__subscription_template_id
+#: model:ir.model.fields,field_description:subscription_oca.field_product_template__subscription_template_id
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__template_id
+msgid "Subscription template"
+msgstr "Шаблон підписки"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_line__amount_tax_line_amount
+msgid "Taxes Amount"
+msgstr "Сума податків"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_template_form
+msgid "Terms and Conditions"
+msgstr "Умови та положення"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__terms
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription_template__description
+msgid "Terms and conditions"
+msgstr "Умови та положення"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_tree
+msgid "Total Tax"
+msgstr "Загальний податок"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_tree
+msgid "Total subtotal"
+msgstr "Загальний підсумок"
+
+#. module: subscription_oca
+#: model:ir.model.fields,field_description:subscription_oca.field_sale_subscription__website_message_ids
+msgid "Website Messages"
+msgstr "Повідомлення вебсайту"
+
+#. module: subscription_oca
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_template__recurring_rule_type__weeks
+msgid "Week(s)"
+msgstr "Тиждень(тижні)"
+
+#. module: subscription_oca
+#: model:ir.model.fields.selection,name:subscription_oca.selection__sale_subscription_template__recurring_rule_type__years
+msgid "Year(s)"
+msgstr "Рік(роки)"
+
+#. module: subscription_oca
+#: model_terms:ir.ui.view,arch_db:subscription_oca.sale_subscription_template_form
+msgid "month(s)"
+msgstr "місяць(і)"

@@ -197,3 +197,362 @@ msgstr "Тип поновлення"
 #: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_yearly__9
 msgid "September"
 msgstr "Вересень"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.contract_contract_customer_form_view
+msgid "<span class=\"o_stat_text\">Sale Orders</span>"
+msgstr "<span class=\"o_stat_text\">Замовлення на продаж</span>"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_res_company__create_contract_at_sale_order_confirmation
+#: model:ir.model.fields,field_description:product_contract.field_res_config_settings__create_contract_at_sale_order_confirmation
+#: model_terms:ir.ui.view,arch_db:product_contract.res_config_settings_form_view
+msgid "Automatically Create Contracts At Sale Order Confirmation"
+msgstr ""
+"Автоматично створювати договори під час підтвердження замовлення на продаж"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.product_contract_configurator_form
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_sale_order__contract_count
+msgid "Contract Count"
+msgstr "Кількість договорів"
+
+#. module: product_contract
+#: model:ir.model,name:product_contract.model_contract_line
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__contract_line_id
+msgid "Contract Line"
+msgstr "Рядок договору"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__contract_line_id
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__contract_line_id
+msgid "Contract Line to replace"
+msgstr "Рядок договору для заміни"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__contract_template_id
+#: model:ir.model.fields,field_description:product_contract.field_product_product__property_contract_template_id
+#: model:ir.model.fields,field_description:product_contract.field_product_template__property_contract_template_id
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__contract_template_id
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__contract_template_id
+msgid "Contract Template"
+msgstr "Шаблон договору"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.view_order_form
+msgid "Create Contracts"
+msgstr "Створити договори"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.product_contract_configurator_form
+msgid "Dates"
+msgstr "Дати"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__auto_renew_rule_type__daily
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_rule_type__daily
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__auto_renew_rule_type__daily
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_rule_type__daily
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__termination_notice_rule_type__daily
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__auto_renew_rule_type__daily
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_rule_type__daily
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__auto_renew_rule_type__daily
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_rule_type__daily
+msgid "Day(s)"
+msgstr "День(дні)"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__contract_start_date_method__end_this
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__contract_start_date_method__end_this
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__contract_start_date_method__end_this
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__contract_start_date_method__end_this
+msgid "End of current period"
+msgstr "Кінець поточного періоду"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__contract_start_date_method__end_next
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__contract_start_date_method__end_next
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__contract_start_date_method__end_next
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__contract_start_date_method__end_next
+msgid "End of next period"
+msgstr "Кінець наступного періоду"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_semesterly__5
+msgid "Fifth month"
+msgstr "П'ятий місяць"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_quarterly__1
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_semesterly__1
+msgid "First month"
+msgstr "Перший місяць"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_product__force_month_quarterly
+#: model:ir.model.fields,field_description:product_contract.field_product_template__force_month_quarterly
+msgid "Force Month (quarterly)"
+msgstr "Примусовий місяць (щоквартально)"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_product__force_month_semesterly
+#: model:ir.model.fields,field_description:product_contract.field_product_template__force_month_semesterly
+msgid "Force Month (semesterly)"
+msgstr "Примусовий місяць (раз на півріччя)"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_semesterly__4
+msgid "Fourth month"
+msgstr "Четвертий місяць"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__recurring_interval
+#: model:ir.model.fields,field_description:product_contract.field_product_product__recurring_interval
+#: model:ir.model.fields,field_description:product_contract.field_product_template__recurring_interval
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__recurring_interval
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__recurring_interval
+#: model_terms:ir.ui.view,arch_db:product_contract.product_contract_configurator_form
+#: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
+msgid "Invoice Every"
+msgstr "Виставляти рахунок кожні"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_product__recurring_rule_type
+#: model:ir.model.fields,field_description:product_contract.field_product_template__recurring_rule_type
+msgid "Invoicing Recurrence"
+msgstr "Повторюваність виставлення рахунків"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__recurring_invoicing_type
+#: model:ir.model.fields,field_description:product_contract.field_product_product__recurring_invoicing_type
+#: model:ir.model.fields,field_description:product_contract.field_product_template__recurring_invoicing_type
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__recurring_invoicing_type
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__recurring_invoicing_type
+msgid "Invoicing type"
+msgstr "Тип виставлення рахунку"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__is_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_product__is_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_template__is_contract
+#: model:ir.model.fields,field_description:product_contract.field_sale_order__is_contract
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__is_contract
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__is_contract
+msgid "Is a contract"
+msgstr "Є договором"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__auto_renew_rule_type__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurrence_interval__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_rule_type__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__auto_renew_rule_type__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurrence_interval__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_rule_type__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__termination_notice_rule_type__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__auto_renew_rule_type__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurrence_interval__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_rule_type__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__auto_renew_rule_type__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurrence_interval__monthly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_rule_type__monthly
+msgid "Month(s)"
+msgstr "Місяць(і)"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_rule_type__monthlylastday
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_rule_type__monthlylastday
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_rule_type__monthlylastday
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_rule_type__monthlylastday
+msgid "Month(s) last day"
+msgstr "Останній день місяця(ів)"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_product__recurrence_number
+#: model:ir.model.fields,field_description:product_contract.field_product_template__recurrence_number
+msgid "Number of Recurrences"
+msgstr "Кількість повторень"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.product_contract_configurator_form
+msgid "Ok"
+msgstr "Гаразд"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_invoicing_type__post-paid
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_invoicing_type__post-paid
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_invoicing_type__post-paid
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_invoicing_type__post-paid
+msgid "Post-paid"
+msgstr "Післяплата"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_invoicing_type__pre-paid
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_invoicing_type__pre-paid
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_invoicing_type__pre-paid
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_invoicing_type__pre-paid
+msgid "Pre-paid"
+msgstr "Передплата"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurrence_interval__quarterly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_rule_type__quarterly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurrence_interval__quarterly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_rule_type__quarterly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurrence_interval__quarterly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_rule_type__quarterly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurrence_interval__quarterly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_rule_type__quarterly
+msgid "Quarter(s)"
+msgstr "Квартал(и)"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__recurrence_interval
+#: model:ir.model.fields,field_description:product_contract.field_product_product__recurrence_interval
+#: model:ir.model.fields,field_description:product_contract.field_product_template__recurrence_interval
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__recurrence_interval
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__recurrence_interval
+msgid "Recurrence Interval"
+msgstr "Інтервал повторення"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__recurrence_number
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__recurrence_number
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__recurrence_number
+msgid "Recurrence Number"
+msgstr "Кількість повторень"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.product_contract_configurator_form
+#: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
+msgid "Renewal"
+msgstr "Поновлення"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_contract_contract__sale_order_count
+msgid "Sale Order Count"
+msgstr "Кількість замовлень на продаж"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_contract_line__sale_order_line_id
+msgid "Sale Order Line"
+msgstr "Рядок замовлення на продаж"
+
+#. module: product_contract
+#. odoo-python
+#: code:addons/product_contract/models/contract.py:0
+msgid "Sales Orders"
+msgstr "Замовлення на продаж"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_quarterly__2
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_semesterly__2
+msgid "Second month"
+msgstr "Другий місяць"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurrence_interval__semesterly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_rule_type__semesterly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurrence_interval__semesterly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_rule_type__semesterly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurrence_interval__semesterly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_rule_type__semesterly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurrence_interval__semesterly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_rule_type__semesterly
+msgid "Semester(s)"
+msgstr "Півріччя"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_semesterly__6
+msgid "Sixth month"
+msgstr "Шостий місяць"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__contract_start_date_method
+#: model:ir.model.fields,field_description:product_contract.field_product_product__contract_start_date_method
+#: model:ir.model.fields,field_description:product_contract.field_product_template__contract_start_date_method
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__contract_start_date_method
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__contract_start_date_method
+msgid "Start Date Method"
+msgstr "Метод визначення дати початку"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
+msgid "Start Method"
+msgstr "Метод запуску"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__contract_start_date_method__start_this
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__contract_start_date_method__start_this
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__contract_start_date_method__start_this
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__contract_start_date_method__start_this
+msgid "Start of current period"
+msgstr "Початок поточного періоду"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__contract_start_date_method__start_next
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__contract_start_date_method__start_next
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__contract_start_date_method__start_next
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__contract_start_date_method__start_next
+msgid "Start of next period"
+msgstr "Початок наступного періоду"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_product__termination_notice_interval
+#: model:ir.model.fields,field_description:product_contract.field_product_template__termination_notice_interval
+msgid "Termination Notice Before"
+msgstr "Повідомлення про припинення до"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_product_product__termination_notice_rule_type
+#: model:ir.model.fields,field_description:product_contract.field_product_template__termination_notice_rule_type
+msgid "Termination Notice type"
+msgstr "Тип повідомлення про припинення"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_quarterly__3
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_semesterly__3
+msgid "Third month"
+msgstr "Третій місяць"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__auto_renew_rule_type__weekly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_rule_type__weekly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__auto_renew_rule_type__weekly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_rule_type__weekly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__termination_notice_rule_type__weekly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__auto_renew_rule_type__weekly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_rule_type__weekly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__auto_renew_rule_type__weekly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_rule_type__weekly
+msgid "Week(s)"
+msgstr "Тиждень(тижні)"
+
+#. module: product_contract
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__auto_renew_rule_type__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurrence_interval__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__recurring_rule_type__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__auto_renew_rule_type__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurrence_interval__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__product_template__recurring_rule_type__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__auto_renew_rule_type__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurrence_interval__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line__recurring_rule_type__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__auto_renew_rule_type__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurrence_interval__yearly
+#: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_rule_type__yearly
+msgid "Year(s)"
+msgstr "Рік(роки)"

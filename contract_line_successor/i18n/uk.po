@@ -76,3 +76,179 @@ msgstr "Зупинка"
 #: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__state__to-renew
 msgid "To renew"
 msgstr "До поновлення"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_contract_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_tree_view
+msgid "Are you sure you want to cancel this line"
+msgstr "Ви впевнені, що хочете скасувати цей рядок?"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_search_view
+msgid "Auto-renew"
+msgstr "Автопоновлення"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_contract_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_tree_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_plan_successor_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_stop_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_stop_plan_successor_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_uncancel_form_view
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__is_cancel_allowed
+msgid "Cancel allowed?"
+msgstr "Скасування дозволено?"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__state__canceled
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_search_view
+msgid "Canceled"
+msgstr "Скасовано"
+
+#. module: contract_line_successor
+#: model:ir.model,name:contract_line_successor.model_contract_line
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__contract_line_id
+msgid "Contract Line"
+msgstr "Рядок договору"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_res_company__create_new_line_at_contract_line_renew
+#: model:ir.model.fields,field_description:contract_line_successor.field_res_config_settings__create_new_line_at_contract_line_renew
+msgid "Create New Line At Contract Line Renew"
+msgstr "Створювати новий рядок під час поновлення рядка договору"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__auto_renew_rule_type__daily
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__termination_notice_rule_type__daily
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_template_line__auto_renew_rule_type__daily
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_template_line__termination_notice_rule_type__daily
+msgid "Day(s)"
+msgstr "День(дні)"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__state__in-progress
+msgid "In-progress"
+msgstr "У процесі"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_contract__is_auto_renew
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__is_auto_renew
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_template__is_auto_renew
+msgid "Is Auto Renew"
+msgstr "Автопоновлення"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__manual_renew_needed
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__manual_renew_needed
+msgid "Manual Renew Needed"
+msgstr "Потрібне ручне поновлення"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__auto_renew_rule_type__monthly
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__termination_notice_rule_type__monthly
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_template_line__auto_renew_rule_type__monthly
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_template_line__termination_notice_rule_type__monthly
+msgid "Month(s)"
+msgstr "Місяць(і)"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__recurring_next_date
+msgid "Next Invoice Date"
+msgstr "Дата наступного рахунку"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_contract_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_tree_view
+msgid "Plan Start"
+msgstr "Початок плану"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_contract_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_tree_view
+msgid "Renew"
+msgstr "Поновити"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_template_line_form_view
+msgid "Renewal"
+msgstr "Поновлення"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_stop_form_view
+msgid "Stop Date"
+msgstr "Дата зупинки"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_contract_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_tree_view
+msgid "Stop Plan Successor"
+msgstr "Зупинити планування наступника"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__is_stop_allowed
+msgid "Stop allowed?"
+msgstr "Зупинку дозволено?"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__termination_notice_interval
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_template_line__termination_notice_interval
+msgid "Termination Notice Before"
+msgstr "Повідомлення про припинення до"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__termination_notice_rule_type
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_template_line__termination_notice_rule_type
+msgid "Termination Notice type"
+msgstr "Тип повідомлення про припинення"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_contract_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_tree_view
+msgid "Un-cancel"
+msgstr "Скасувати скасування"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__state__upcoming
+msgid "Upcoming"
+msgstr "Майбутні"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__state__upcoming-close
+msgid "Upcoming Close"
+msgstr "Майбутнє закриття"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_plan_successor_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_stop_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_stop_plan_successor_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_uncancel_form_view
+msgid "Validate"
+msgstr "Підтвердити"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__auto_renew_rule_type__weekly
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__termination_notice_rule_type__weekly
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_template_line__auto_renew_rule_type__weekly
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_template_line__termination_notice_rule_type__weekly
+msgid "Week(s)"
+msgstr "Тиждень(тижні)"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__auto_renew_rule_type__yearly
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_template_line__auto_renew_rule_type__yearly
+msgid "Year(s)"
+msgstr "Рік(роки)"

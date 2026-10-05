@@ -96,3 +96,73 @@ msgstr "Послідовність"
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__price_unit
 msgid "Unit Price"
 msgstr "Ціна за одиницю"
+
+#. module: contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__price_subtotal
+msgid "Amount Untaxed"
+msgstr "Сума без податків"
+
+#. module: contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_res_company__contract_forecast_rule_type
+#: model:ir.model.fields,field_description:contract_forecast.field_res_config_settings__contract_forecast_rule_type
+msgid "Contract Forecast Rule Type"
+msgstr "Тип правила прогнозу договору"
+
+#. module: contract_forecast
+#: model:ir.model,name:contract_forecast.model_contract_line
+#: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__contract_line_id
+msgid "Contract Line"
+msgstr "Рядок договору"
+
+#. module: contract_forecast
+#: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_search_view
+msgid "Date Invoice"
+msgstr "Дата рахунку"
+
+#. module: contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_res_company__enable_contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_res_config_settings__enable_contract_forecast
+msgid "Enable contract forecast"
+msgstr "Увімкнути прогноз договору"
+
+#. module: contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_contract_line__forecast_period_ids
+msgid "Forecast Periods"
+msgstr "Періоди прогнозу"
+
+#. module: contract_forecast
+#: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_search_view
+msgid "Group By"
+msgstr "Групувати за"
+
+#. module: contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: contract_forecast
+#: model:ir.model.fields.selection,name:contract_forecast.selection__res_company__contract_forecast_rule_type__monthly
+msgid "Month(s)"
+msgstr "Місяць(і)"
+
+#. module: contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_res_company__contract_forecast_interval
+#: model:ir.model.fields,field_description:contract_forecast.field_res_config_settings__contract_forecast_interval
+msgid "Number of contract forecast Periods"
+msgstr "Кількість періодів прогнозу договору"
+
+#. module: contract_forecast
+#: model:ir.model.fields,field_description:contract_forecast.field_res_company__contract_forecast_stop_at_line_date_end
+#: model:ir.model.fields,field_description:contract_forecast.field_res_config_settings__contract_forecast_stop_at_line_date_end
+msgid "Stop forecast at contract line end date"
+msgstr "Зупиняти прогноз на даті завершення рядка договору"
+
+#. module: contract_forecast
+#: model:ir.model.fields.selection,name:contract_forecast.selection__res_company__contract_forecast_rule_type__yearly
+msgid "Year(s)"
+msgstr "Рік(роки)"

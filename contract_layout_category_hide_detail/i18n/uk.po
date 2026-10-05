@@ -23,3 +23,21 @@ msgstr "Показувати деталі"
 #: model_terms:ir.ui.view,arch_db:contract_layout_category_hide_detail.portal_contract_page_hide_detail
 msgid "Subtotal"
 msgstr "Проміжний підсумок"
+
+#. module: contract_layout_category_hide_detail
+#: model:ir.model.fields,field_description:contract_layout_category_hide_detail.field_contract_line__show_line_amount
+#: model:ir.model.fields,field_description:contract_layout_category_hide_detail.field_contract_template_line__show_line_amount
+msgid "Show Line Amount"
+msgstr "Показувати суму рядка"
+
+#. module: contract_layout_category_hide_detail
+#: model:ir.model.fields,field_description:contract_layout_category_hide_detail.field_contract_line__show_section_subtotal
+#: model:ir.model.fields,field_description:contract_layout_category_hide_detail.field_contract_template_line__show_section_subtotal
+msgid "Show Section Subtotal"
+msgstr "Показувати проміжний підсумок розділу"
+
+#. module: contract_layout_category_hide_detail
+#: model:ir.model.fields,field_description:contract_layout_category_hide_detail.field_contract_line__show_subtotal
+#: model:ir.model.fields,field_description:contract_layout_category_hide_detail.field_contract_template_line__show_subtotal
+msgid "Show Subtotal"
+msgstr "Показувати проміжний підсумок"

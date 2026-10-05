@@ -48,3 +48,47 @@ msgstr "Фіксована ціна"
 #: model:ir.model.fields,field_description:contract_price_revision.field_contract_price_revision_wizard__variation_percent
 msgid "Variation %"
 msgstr "Відхилення %"
+
+#. module: contract_price_revision
+#: model_terms:ir.ui.view,arch_db:contract_price_revision.contract_line_duplicate_wizard_view
+msgid "Apply"
+msgstr "Застосувати"
+
+#. module: contract_price_revision
+#: model_terms:ir.ui.view,arch_db:contract_price_revision.contract_line_duplicate_wizard_view
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: contract_price_revision
+#: model:ir.model.fields,field_description:contract_price_revision.field_contract_price_revision_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: contract_price_revision
+#: model:ir.model.fields,field_description:contract_price_revision.field_contract_price_revision_wizard__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: contract_price_revision
+#: model:ir.model.fields,field_description:contract_price_revision.field_contract_line__previous_price
+msgid "Previous price"
+msgstr "Попередня ціна"
+
+#. module: contract_price_revision
+#: model_terms:ir.ui.view,arch_db:contract_price_revision.contract_line_duplicate_wizard_view
+msgid ""
+"Set new start date and variation percent to duplicate.\n"
+"                    This process set start date previous day as end date of\n"
+"                    origin record.\n"
+"                    <br/>\n"
+"                    <br/>"
+msgstr ""
+"Задайте нову дату початку й відсоток зміни для дублювання.\n"
+"                    Цей процес встановлює попередній день перед новою датою початку як дату завершення вихідного запису.\n"
+"                    <br/>\n"
+"                    <br/>"
+
+#. module: contract_price_revision
+#: model:ir.model.fields,field_description:contract_price_revision.field_contract_price_revision_wizard__variation_type
+msgid "Variation Type"
+msgstr "Тип варіації"

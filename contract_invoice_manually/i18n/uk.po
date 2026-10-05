@@ -22,3 +22,21 @@ msgstr "Договори"
 #: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_manually_create_invoice__filter_domain
 msgid "Domain"
 msgstr "Домен"
+
+#. module: contract_invoice_manually
+#: model_terms:ir.ui.view,arch_db:contract_invoice_manually.contract_manually_create_invoice_form_view
+msgid "Contract Filter"
+msgstr "Фільтр договорів"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_contract__enable_contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_res_company__enable_contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_res_config_settings__enable_contract_invoice_manually
+msgid "Enable Manual Invoicing"
+msgstr "Увімкнути ручне виставлення рахунків"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_contract__is_manually_invoiced
+#: model_terms:ir.ui.view,arch_db:contract_invoice_manually.contract_contract_search_view
+msgid "Manually Invoiced"
+msgstr "Виставлено вручну"
