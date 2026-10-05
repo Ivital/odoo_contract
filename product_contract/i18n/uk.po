@@ -556,3 +556,90 @@ msgstr "Тиждень(тижні)"
 #: model:ir.model.fields.selection,name:product_contract.selection__sale_order_line_contract_mixin__recurring_rule_type__yearly
 msgid "Year(s)"
 msgstr "Рік(роки)"
+
+#. module: product_contract
+#: model:ir.actions.act_window,name:product_contract.product_contract_configurator_action
+msgid "Configure a contract"
+msgstr "Налаштувати договір"
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_product__force_month_quarterly
+#: model:ir.model.fields,help:product_contract.field_product_template__force_month_quarterly
+msgid "Force the month to be used inside the quarter"
+msgstr "Примусово використовувати місяць усередині кварталу"
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_product__force_month_semesterly
+#: model:ir.model.fields,help:product_contract.field_product_template__force_month_semesterly
+msgid "Force the month to be used inside the semester"
+msgstr "Примусово використовувати місяць усередині півріччя"
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_contract_configurator__recurring_interval
+#: model:ir.model.fields,help:product_contract.field_sale_order_line__recurring_interval
+#: model:ir.model.fields,help:product_contract.field_sale_order_line_contract_mixin__recurring_interval
+msgid "Invoice every (Days/Week/Month/Year)"
+msgstr "Виставляти рахунок кожні (дні/тижні/місяці/роки)"
+
+#. module: product_contract
+#: model:ir.model.fields,field_description:product_contract.field_sale_order__need_contract_creation
+msgid "Need Contract Creation"
+msgstr "Потрібне створення договору"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.view_order_form
+msgid "Recurrence Invoicing"
+msgstr "Періодичне виставлення рахунків"
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_contract_configurator__auto_renew_interval
+#: model:ir.model.fields,help:product_contract.field_product_product__auto_renew_interval
+#: model:ir.model.fields,help:product_contract.field_product_template__auto_renew_interval
+#: model:ir.model.fields,help:product_contract.field_sale_order_line__auto_renew_interval
+#: model:ir.model.fields,help:product_contract.field_sale_order_line_contract_mixin__auto_renew_interval
+msgid "Renew every (Days/Week/Month/Year)"
+msgstr "Поновлювати кожні (дні/тижні/місяці/роки)"
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
+msgid "Renewal Frequency"
+msgstr "Частота поновлення"
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_contract_configurator__recurring_rule_type
+#: model:ir.model.fields,help:product_contract.field_sale_order_line__recurring_rule_type
+#: model:ir.model.fields,help:product_contract.field_sale_order_line_contract_mixin__recurring_rule_type
+msgid "Specify Interval for automatic invoice generation."
+msgstr "Укажіть інтервал для автоматичного створення рахунків."
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_contract_configurator__auto_renew_rule_type
+#: model:ir.model.fields,help:product_contract.field_product_product__auto_renew_rule_type
+#: model:ir.model.fields,help:product_contract.field_product_template__auto_renew_rule_type
+#: model:ir.model.fields,help:product_contract.field_sale_order_line__auto_renew_rule_type
+#: model:ir.model.fields,help:product_contract.field_sale_order_line_contract_mixin__auto_renew_rule_type
+msgid "Specify Interval for automatic renewal."
+msgstr "Укажіть інтервал для автоматичного поновлення."
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_contract_configurator__recurrence_interval
+#: model:ir.model.fields,help:product_contract.field_sale_order_line__recurrence_interval
+#: model:ir.model.fields,help:product_contract.field_sale_order_line_contract_mixin__recurrence_interval
+msgid "Specify Interval for contract duration."
+msgstr "Укажіть інтервал тривалості договору."
+
+#. module: product_contract
+#: model:ir.model.fields,help:product_contract.field_product_contract_configurator__recurring_invoicing_type
+#: model:ir.model.fields,help:product_contract.field_sale_order_line__recurring_invoicing_type
+#: model:ir.model.fields,help:product_contract.field_sale_order_line_contract_mixin__recurring_invoicing_type
+msgid ""
+"Specify if the invoice must be generated at the beginning (pre-paid) or end "
+"(post-paid) of the period."
+msgstr ""
+"Укажіть, чи рахунок має створюватися на початку (передоплата) або наприкінці"
+" (післяплата) періоду."
+
+#. module: product_contract
+#: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
+msgid "Termination Notice"
+msgstr "Повідомлення про припинення"

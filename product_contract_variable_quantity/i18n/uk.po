@@ -46,3 +46,8 @@ msgstr "Фіксована кількість"
 #: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__sale_order_line_contract_mixin__qty_type__variable
 msgid "Variable quantity"
 msgstr "Змінна кількість"
+
+#. module: product_contract_variable_quantity
+#: model_terms:ir.ui.view,arch_db:product_contract_variable_quantity.product_template_form_view
+msgid "Quantity to invoice"
+msgstr "Кількість для виставлення рахунку"

@@ -252,3 +252,58 @@ msgstr "Тиждень(тижні)"
 #: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_template_line__auto_renew_rule_type__yearly
 msgid "Year(s)"
 msgstr "Рік(роки)"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_stop_form_view
+msgid "Is suspension without end date"
+msgstr "Призупинення без дати завершення"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__is_plan_successor_allowed
+msgid "Plan successor allowed?"
+msgstr "Дозволено наступний план?"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_form_view
+msgid "Predecessor & Successor Lines"
+msgstr "Рядки попередника та наступника"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__predecessor_contract_line_id
+msgid "Predecessor Contract Line"
+msgstr "Попередній рядок договору"
+
+#. module: contract_line_successor
+#: model:ir.actions.server,name:contract_line_successor.contract_line_cron_for_renew_ir_actions_server
+msgid "Renew Contract lines"
+msgstr "Поновити рядки договору"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__is_stop_plan_successor_allowed
+msgid "Stop/Plan successor allowed?"
+msgstr "Зупинка/планування наступника дозволені?"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__successor_contract_line_id
+msgid "Successor Contract Line"
+msgstr "Наступний рядок договору"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_stop_plan_successor_form_view
+msgid "Suspension End Date"
+msgstr "Дата завершення призупинення"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_wizard_stop_plan_successor_form_view
+msgid "Suspension Start Date"
+msgstr "Дата початку призупинення"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__termination_notice_date
+msgid "Termination Notice Date"
+msgstr "Дата повідомлення про припинення"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__is_un_cancel_allowed
+msgid "Un-Cancel allowed?"
+msgstr "Дозволено скасувати скасування?"

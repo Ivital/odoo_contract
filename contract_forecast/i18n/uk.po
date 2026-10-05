@@ -166,3 +166,26 @@ msgstr "Зупиняти прогноз на даті завершення ря�
 #: model:ir.model.fields.selection,name:contract_forecast.selection__res_company__contract_forecast_rule_type__yearly
 msgid "Year(s)"
 msgstr "Рік(роки)"
+
+#. module: contract_forecast
+#: model_terms:ir.ui.view,arch_db:contract_forecast.contract_contract_form_view
+msgid ""
+"<span class=\"o_stat_text\">Forecast\n"
+"                        </span>"
+msgstr ""
+"<span class=\"o_stat_text\">Прогноз\n"
+"                        </span>"
+
+#. module: contract_forecast
+#: model_terms:ir.ui.view,arch_db:contract_forecast.res_config_settings_form_view
+msgid "Forecast Interval"
+msgstr "Інтервал прогнозу"
+
+#. module: contract_forecast
+#: model_terms:ir.ui.view,arch_db:contract_forecast.res_config_settings_form_view
+msgid ""
+"Stop generating forecasts at the contract line's end date, even if it is set"
+" to auto-renew"
+msgstr ""
+"Припиняти створення прогнозів на дату завершення рядка контракту, навіть "
+"якщо ввімкнено автопродовження"

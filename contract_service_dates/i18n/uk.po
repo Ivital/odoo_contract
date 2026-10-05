@@ -17,3 +17,13 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract_service_dates.contract_line_form_view
 msgid "Service Dates"
 msgstr "Дати обслуговування"
+
+#. module: contract_service_dates
+#: model:ir.model.fields,field_description:contract_service_dates.field_contract_line__service_end_date
+msgid "Service End Date"
+msgstr "Дата завершення обслуговування"
+
+#. module: contract_service_dates
+#: model:ir.model.fields,field_description:contract_service_dates.field_contract_line__service_start_date
+msgid "Service Start Date"
+msgstr "Дата початку обслуговування"

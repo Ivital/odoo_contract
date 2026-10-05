@@ -107,3 +107,38 @@ msgstr "Причина припинення"
 #: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_form_view
 msgid "on"
 msgstr "на"
+
+#. module: contract_termination
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_form_view
+msgid "Are you sure you want to re-activate this contract?"
+msgstr "Ви впевнені, що хочете повторно активувати цей договір?"
+
+#. module: contract_termination
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_terminate_form_view
+msgid "Are you sure you want to terminate this contract?"
+msgstr "Ви впевнені, що хочете припинити цей договір?"
+
+#. module: contract_termination
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_form_view
+msgid "Cancel Contract Termination"
+msgstr "Скасувати припинення договору"
+
+#. module: contract_termination
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_terminate_form_view
+msgid "Contract Contract Terminate"
+msgstr "Припинити договір"
+
+#. module: contract_termination
+#: model:ir.model.fields,field_description:contract_termination.field_contract_contract_terminate__terminate_with_last_date_invoiced
+msgid "Terminate lines with last date invoiced"
+msgstr "Припинити рядки за останньою датою рахунка"
+
+#. module: contract_termination
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_form_view
+msgid "This contract was terminated for the reason"
+msgstr "Цей договір припинено з причини"
+
+#. module: contract_termination
+#: model_terms:ir.ui.view,arch_db:contract_termination.contract_contract_form_view
+msgid "Update Termination Details"
+msgstr "Оновити деталі припинення"

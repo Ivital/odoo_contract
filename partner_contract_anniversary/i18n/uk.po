@@ -44,3 +44,8 @@ msgstr "Перший договір"
 #: model:ir.model.fields,field_description:partner_contract_anniversary.field_res_users__first_contract_line_start_date
 msgid "First Contract Date"
 msgstr "Дата першого договору"
+
+#. module: partner_contract_anniversary
+#: model:ir.actions.server,name:partner_contract_anniversary.ir_cron_update_contract_anniversary_ir_actions_server
+msgid "Partners: Update Contract Anniversaries"
+msgstr "Контрагенти: оновити річниці договорів"

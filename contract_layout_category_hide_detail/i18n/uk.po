@@ -41,3 +41,11 @@ msgstr "Показувати проміжний підсумок розділу"
 #: model:ir.model.fields,field_description:contract_layout_category_hide_detail.field_contract_template_line__show_subtotal
 msgid "Show Subtotal"
 msgstr "Показувати проміжний підсумок"
+
+#. module: contract_layout_category_hide_detail
+#: model:ir.model.fields,help:contract_layout_category_hide_detail.field_contract_line__show_section_subtotal
+#: model:ir.model.fields,help:contract_layout_category_hide_detail.field_contract_template_line__show_section_subtotal
+msgid "Uncheck this if you want to hide the subtotal on section part"
+msgstr ""
+"Зніміть прапорець, якщо потрібно приховати проміжний підсумок у частині "
+"секції"

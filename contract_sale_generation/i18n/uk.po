@@ -40,3 +40,13 @@ msgstr "Створити продажі"
 #: model:ir.model.fields,field_description:contract_sale_generation.field_contract_template__sale_autoconfirm
 msgid "Sale Autoconfirm"
 msgstr "Автопідтвердження продажу"
+
+#. module: contract_sale_generation
+#: model:ir.model.fields,field_description:contract_sale_generation.field_sale_order__contract_auto_confirm
+msgid "Contract Auto Confirm"
+msgstr "Автопідтвердження договору"
+
+#. module: contract_sale_generation
+#: model:ir.actions.server,name:contract_sale_generation.contract_cron_for_sale_ir_actions_server
+msgid "Generate Recurring sales from Contracts"
+msgstr "Створювати повторювані продажі з договорів"

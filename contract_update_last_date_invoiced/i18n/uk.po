@@ -56,3 +56,13 @@ msgstr "Останнє оновлення"
 #: model_terms:ir.ui.view,arch_db:contract_update_last_date_invoiced.contract_update_last_date_invoiced_wizard_form_view
 msgid "Update Invoice Dates"
 msgstr "Оновити дати рахунків"
+
+#. module: contract_update_last_date_invoiced
+#: model:ir.model.fields,field_description:contract_update_last_date_invoiced.field_contract_update_last_date_invoiced__recurring_next_date
+msgid "Date of Next Invoice"
+msgstr "Дата наступного рахунку"
+
+#. module: contract_update_last_date_invoiced
+#: model:ir.model.fields,field_description:contract_update_last_date_invoiced.field_contract_update_last_date_invoiced__last_date_invoiced
+msgid "Last Date Invoiced"
+msgstr "Дата останнього виставлення рахунку"

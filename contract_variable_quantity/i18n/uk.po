@@ -31,7 +31,7 @@ msgstr ""
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
 msgid "<i>context</i>: Current context dictionary."
-msgstr ""
+msgstr "<i>context</i>: словник поточного контексту."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -39,6 +39,8 @@ msgid ""
 "<i>contract</i>: Contract whose line\n"
 "                                    belongs to."
 msgstr ""
+"<i>contract</i>: контракт, до якого\n"
+"                                    належить рядок."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -46,6 +48,8 @@ msgid ""
 "<i>env</i>: Environment variable for\n"
 "                                    getting other models."
 msgstr ""
+"<i>env</i>: змінна середовища для\n"
+"                                    отримання інших моделей."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -53,6 +57,8 @@ msgid ""
 "<i>invoice</i>: Invoice (header) being\n"
 "                                    created."
 msgstr ""
+"<i>invoice</i>: рахунок (заголовок), який\n"
+"                                    створюється."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -60,11 +66,13 @@ msgid ""
 "<i>line</i>: Contract recurring invoice\n"
 "                                    line that triggers this formula."
 msgstr ""
+"<i>line</i>: рядок періодичного рахунку контракту,\n"
+"                                    що запускає цю формулу."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
 msgid "<i>user</i>: Current user."
-msgstr ""
+msgstr "<i>користувач</i>: поточний користувач."
 
 #. module: contract_variable_quantity
 #: model:ir.model,name:contract_variable_quantity.model_contract_abstract_contract_line
@@ -74,7 +82,7 @@ msgstr ""
 #. module: contract_variable_quantity
 #: model_terms:ir.actions.act_window,help:contract_variable_quantity.action_contract_quantity_formula
 msgid "Click to create a new formula for variable quantities."
-msgstr ""
+msgstr "Натисніть, щоб створити нову формулу змінних кількостей."
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_line_qty_formula__code
@@ -124,7 +132,7 @@ msgstr ""
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
 msgid "Example of Python code"
-msgstr ""
+msgstr "Приклад коду Python"
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields.selection,name:contract_variable_quantity.selection__contract_abstract_contract_line__qty_type__fixed
@@ -142,7 +150,7 @@ msgstr "Формули (кількість)"
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
 msgid "Help with Python expressions."
-msgstr ""
+msgstr "Довідка з Python-виразів."
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_line_qty_formula__id
@@ -194,7 +202,7 @@ msgstr "Тип кількості"
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_contract__skip_zero_qty
 msgid "Skip Zero Qty Lines"
-msgstr ""
+msgstr "Пропускати рядки з нульовою кількістю"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.portal_contract_page
@@ -214,6 +222,8 @@ msgid ""
 "You can use these variables to compute your\n"
 "                                formula:"
 msgstr ""
+"Для обчислення\n"
+"                                формули можна використовувати такі змінні:"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -223,3 +233,7 @@ msgid ""
 "                                the quantity to invoice in the variable\n"
 "                                'result'."
 msgstr ""
+"Потрібно вставити коректний блок коду Python, який\n"
+"                                у певний момент записує значення типу float/integer\n"
+"                                кількості для виставлення рахунку в змінну\n"
+"                                'result'."

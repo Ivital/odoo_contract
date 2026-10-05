@@ -28,3 +28,23 @@ msgstr "Включати повторення в ціну"
 #: model:ir.model.fields,field_description:product_contract_recurrence_in_price.field_sale_order_line_contract_mixin__recurring_invoicing_number
 msgid "Recurring Invoicing Number"
 msgstr "Номер повторюваного виставлення рахунку"
+
+#. module: product_contract_recurrence_in_price
+#: model:ir.model.fields,help:product_contract_recurrence_in_price.field_product_contract_configurator__recurring_invoicing_number
+#: model:ir.model.fields,help:product_contract_recurrence_in_price.field_sale_order_line__recurring_invoicing_number
+#: model:ir.model.fields,help:product_contract_recurrence_in_price.field_sale_order_line_contract_mixin__recurring_invoicing_number
+msgid "Number of times a line will be invoiced."
+msgstr "Кількість разів, коли для рядка буде виставлено рахунок."
+
+#. module: product_contract_recurrence_in_price
+#: model:ir.model.fields,help:product_contract_recurrence_in_price.field_product_contract_configurator__include_recurrence_in_price
+#: model:ir.model.fields,help:product_contract_recurrence_in_price.field_product_product__include_recurrence_in_price
+#: model:ir.model.fields,help:product_contract_recurrence_in_price.field_product_template__include_recurrence_in_price
+#: model:ir.model.fields,help:product_contract_recurrence_in_price.field_sale_order_line__include_recurrence_in_price
+#: model:ir.model.fields,help:product_contract_recurrence_in_price.field_sale_order_line_contract_mixin__include_recurrence_in_price
+msgid ""
+"The amounts of the Sale Order Line will be multipliedby the number of times "
+"the line will be invoiced."
+msgstr ""
+"Суми рядка замовлення на продаж буде помножено на кількість разів, коли для "
+"рядка буде виставлено рахунок."

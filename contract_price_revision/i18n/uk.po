@@ -92,3 +92,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract_price_revision.field_contract_price_revision_wizard__variation_type
 msgid "Variation Type"
 msgstr "Тип варіації"
+
+#. module: contract_price_revision
+#: model:ir.actions.act_window,name:contract_price_revision.contract_line_duplicate_wizard_action
+msgid "Create revision of contract lines"
+msgstr "Створити ревізію рядків договору"
+
+#. module: contract_price_revision
+#: model:ir.model.fields,field_description:contract_price_revision.field_contract_line__never_revise_price
+msgid "Never Revise Price"
+msgstr "Ніколи не переглядати ціну"
+
+#. module: contract_price_revision
+#: model:ir.model.fields,field_description:contract_price_revision.field_contract_line__price_can_be_revised
+msgid "Price Can Be Revised"
+msgstr "Ціну можна переглядати"
