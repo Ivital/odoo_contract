@@ -1,0 +1,78 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-05 05:39+0000\n"
+"Last-Translator: Ivital <Ivital@users.noreply.github.com>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__is_auto_renew
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_template_line__is_auto_renew
+msgid "Auto Renew"
+msgstr "Автоподовження"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__state__closed
+msgid "Closed"
+msgstr "Закрито"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__create_uid
+msgid "Created by"
+msgstr "Створив"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__create_date
+msgid "Created on"
+msgstr "Створено"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__date_end
+msgid "Date End"
+msgstr "Дата завершення"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__date_start
+msgid "Date Start"
+msgstr "Дата початку"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line_wizard__display_name
+msgid "Display Name"
+msgstr "Відображувана назва"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__auto_renew_interval
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_template_line__auto_renew_interval
+msgid "Renew Every"
+msgstr "Поновлювати кожні"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__auto_renew_rule_type
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_template_line__auto_renew_rule_type
+msgid "Renewal type"
+msgstr "Тип поновлення"
+
+#. module: contract_line_successor
+#: model:ir.model.fields,field_description:contract_line_successor.field_contract_line__state
+msgid "State"
+msgstr "Стан"
+
+#. module: contract_line_successor
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_contract_form_view
+#: model_terms:ir.ui.view,arch_db:contract_line_successor.contract_line_tree_view
+msgid "Stop"
+msgstr "Зупинка"
+
+#. module: contract_line_successor
+#: model:ir.model.fields.selection,name:contract_line_successor.selection__contract_line__state__to-renew
+msgid "To renew"
+msgstr "До поновлення"
